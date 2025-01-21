@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  title:        "Microrobotics-Basic-IPs"      # Project title
+  author:       "Jonas Boerschmann"      # Your name
+  discord:      "geronimob."      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "First Test for Basic IPs like: PTAT, Oscillator, Decoder, Command Checker, Driver, ..."      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
