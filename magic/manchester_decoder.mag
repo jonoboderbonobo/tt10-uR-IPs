@@ -1,8 +1,0 @@
-magic
-tech sky130A
-timestamp 1738529756
-use sky130_fd_sc_hd__xnor2_1  x1
-timestamp 1738529756
-transform 1 0 0 0 1 0
-box -19 -24 341 296
-<< end >>
