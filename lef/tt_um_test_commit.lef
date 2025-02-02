@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO tt_um_analog_example
+MACRO tt_um_test_commit
   CLASS BLOCK ;
-  FOREIGN tt_um_analog_example ;
+  FOREIGN tt_um_test_commit ;
   ORIGIN 0.000 0.000 ;
   SIZE 161.000 BY 225.760 ;
   PIN clk
@@ -431,6 +431,6 @@ MACRO tt_um_analog_example
         RECT 4.000 5.000 6.000 220.760 ;
     END
   END VGND
-END tt_um_analog_example
+END tt_um_test_commit
 END LIBRARY
 
