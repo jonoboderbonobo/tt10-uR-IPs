@@ -1,0 +1,38 @@
+** sch_path: /foss/designs/tt10-uR-IPs/xschem/AAA_template_tb.sch
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
+
+**.subckt AAA_template_tb
+V2 vdd_hi GND 5
+V5 in GND dc 5 pulse 5 0 0 1n 1n 0.05u 0.1u
+C1 out GND 4.4p m=1
+.save v(vdd_hi)
+.save v(in)
+.save v(out)
+XM2 in vdd_hi out GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+**** begin user architecture code
+
+
+.control
+*set filetype=ascii
+*save all
+
+op
+tran 0.1n 1u
+
+write tb_inv.raw
+*exit
+
+.endc
+
+
+
+** opencircuitdesign pdks install
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
