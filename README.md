@@ -1,4 +1,8 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
+# Limitations of Robot
+Tiny Tapeout is a "Multi Project Die" Fabrication Process rather than a "Multi Project Wafer (MPW)" 
+Therefore its not easy to remove the section of the Die that holds the robot.
+
 
 # Tiny Tapeout Analog Project Template
 
