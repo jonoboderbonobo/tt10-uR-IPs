@@ -1,9 +1,4 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
+<!--- Each image must be less than
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
@@ -15,6 +10,6 @@ Test0
 
 Test1
 
-## External hardware
-
-None. It's a robot.
+# Limitations of Tiny Tapeout for Microrobotics
+Tiny Tapeout is a "Multi Project Die" (made up name) Fabrication Process rather than a "Multi Project Wafer (MPW)" Fabrication Process.
+Therefore its not easy to remove the section of the Die that holds the robot, because the Chip is already Packaged rather then the raw Die (Chip without Package). Additionally there is only ONE Robot on the complete chip, meaning there is no room for failure regarding seperation of the robot from the rest of the Die. That means regarding Microrobotics Tiny Tapeout is mainly recommended for testing circuits rather than testing Displacement, Gait or Swarm Behavior. 
