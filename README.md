@@ -9,7 +9,9 @@ If you are new to the field of **Microrobotics❤️** that's even better! For y
 ## What is a Mobile Microrobot?
 
 ```
-"A mobile microrobot [...] [is] a mobile robotic system where its untethered mobile component has all dimension less than 1 mm and larger than 1 um and its mechanics is dominated by microscale physical forces and effects."
+    "A mobile microrobot [...] [is] a mobile robotic system where its untethered 
+    mobile component has all dimension less than 1 mm and larger than 1 um 
+    and its mechanics is dominated by microscale physical forces and effects."
 ``` 
 [[1]](#1.1)
 <br>
