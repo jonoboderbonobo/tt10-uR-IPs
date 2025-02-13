@@ -31,7 +31,8 @@ There are currently six different fields where potential microrobotic applicatio
 - Microfluidics
 - Mobile Sensor Networks
 - Environmental Remediation
-<br>
+
+
 [[1]](#1.2)
 
 Healthcare: <br>
@@ -99,24 +100,21 @@ Usage of those two PDKs is free of charge and required no NDA. Prototyping with 
 <br>
 
 <a id="1.1">[1.1]</a> <br>
----> [link](https://archive.org/details/mobilemicrorobot0000sitt/page/2/mode/2up) <--- <br>
-Mobile Microrobotics Definition (Page 2).
+[Mobile Microrobotics Definition (Page 2).](https://archive.org/details/mobilemicrorobot0000sitt/page/2/mode/2up)
+
 <br>
 
 <a id="1.2">[1.2]</a> <br>
----> [link](https://archive.org/details/mobilemicrorobot0000sitt/page/4/mode/2up) <--- <br>
-Mobile Microrobotics Definition (Page 4, 225 - 240).
+[Mobile Microrobotics Definition (Page 4, 225 - 240).](https://archive.org/details/mobilemicrorobot0000sitt/page/4/mode/2up)
+
 <br>
 
 <a id="88">[88]</a> <br>
----> [link](https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202311462) <--- <br>
-U. Bozuyuk, P. Wrede, E. Yildiz, and M. Sitti, “Roadmap for Clinical Translation of Mobile Microrobotics,” Advanced Materials, vol. 36, no. 23, p. 2311462, Jun. 2024, doi: 10.1002/adma.202311462.
+[U. Bozuyuk, P. Wrede, E. Yildiz, and M. Sitti, “Roadmap for Clinical Translation of Mobile Microrobotics,” Advanced Materials, vol. 36, no. 23, p. 2311462, Jun. 2024, doi: 10.1002/adma.202311462.](https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202311462)
+
 
 <a id="99">[99]</a> <br>
 https://tinytapeout.com
 <br>
 <br>
 <br>
-
-
----> [link]() <---
