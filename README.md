@@ -44,7 +44,6 @@ like Cargo Delivery []()[]()[](), Surgery []()[]()[](), Blood-Brain Barrier [(BB
 ## What types of On-Board Mobile Microrobots are there?
 Even tho the former definition of mobile microrobots excludes alot of small robots and focusing only on On-Board robots excludes even more, there is still a vast variety of robots with completely different application, energy source, actuation method and locomoation method. But not many of those are beyond the concept stage. Thats the reason 
 <br>
-<br>
 TBD
 <br>
 TBD
@@ -60,7 +59,6 @@ Curerntly many research laboratories focus on manipulating micro-particles with 
 
 ## Goals of SuRF 🏄‍♀️
 The main goal of SuRF 🏄‍♀️ is to propell the field of untethred mobile microrobotics to new heights. To achieve this goal multiple problems have been identified an will be attacked simultaniously. 
-<br>
 <br>
 TBD
 <br>
@@ -95,9 +93,10 @@ Usage of those two PDKs is free of charge and required no NDA. Prototyping with 
 <br>
 <br>
 # References
-<a id="1">[1]</a>  <br>
----> [link](https://archive.org/details/mobilemicrorobot0000sitt/page/2/mode/2up) <--- <br>
-M. Sitti, Mobile microrobotics. in Intelligent robotics and autonomous agents. Cambridge, Mass: The MIT press, 2018 
+<a id="1">[1]</a> 
+<br>
+[M. Sitti, Mobile microrobotics. in Intelligent robotics and autonomous agents. Cambridge, Mass: The MIT press, 2018 ](https://archive.org/details/mobilemicrorobot0000sitt/page/2/mode/2up)
+<br>
 
 <a id="1.1">[1.1]</a> <br>
 ---> [link](https://archive.org/details/mobilemicrorobot0000sitt/page/2/mode/2up) <--- <br>
