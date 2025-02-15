@@ -22,9 +22,9 @@ If you are new to the field of **Microrobotics❤️** that's even better! For y
 <br>
 <br>
 
-| <img src="/docs/img/Antbot.gif" width="500" alt="Antbot" /> | <img src="/docs/img/Millidelta.gif" width="500" alt="Millidelta" /> |
+| <img src="/docs/img/Antbot.gif" width="450" alt="Antbot" /> | <img src="/docs/img/Millidelta.gif" width="450" alt="Millidelta" /> |
 | :--: | :--: |
-| ✅ A microbot. [2] | ❌ Not a microbot. [2] |
+| ✅ A microbot. [2](#2) | ❌ Not a microbot. [3](#3) |
 
 
 
