@@ -1,14 +1,9 @@
+# ⚠️⚠️ Site under construction ⚠️⚠️
 #  SuRF 🏄‍♀️ Piezoelectric Actuation Circuits
 This tapeout is part of the [Open Source Mobile Microrobotics Framework SuRF 🏄‍♀️](https://github.com/jonoboderbonobo/surf/) and aims to provide Silicon Proven-, Tested-, Open Source-, Reusable Circuit-Blocks for Microrobots with On-Board Actuation. <br> <br>
 If you are just here for the circuits you can skip to the [documenation](docs/documentation.md).
 <br> <br>
 If you are new to the field of **Microrobotics❤️** that's even better! For you I would recommend reading this current introduction file, before taking a deep dive into the [marvelous world of the microscale](https://github.com/jonoboderbonobo/surf/blob/main/barrier-free.md).
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 
 # What is a Mobile Microrobot?
@@ -22,10 +17,9 @@ If you are new to the field of **Microrobotics❤️** that's even better! For y
 <br>
 <br>
 
-| <img src="/docs/img/Antbot.gif" width="450" alt="Antbot" /> | <img src="/docs/img/Millidelta.gif" width="450" alt="Millidelta" /> |
+| <img src="/docs/img/Antbot.gif" width="370" alt="Antbot" /> | <img src="/docs/img/Millidelta.gif" width="395" alt="Millidelta" /> |
 | :--: | :--: |
 | ✅ A microbot. [[2]](#2) | ❌ Not a microbot. [[3]](#3) |
-
 
 
 
@@ -47,32 +41,11 @@ There are currently five different fields where potential microrobotic applicati
 - Microfluidics
 - Mobile Sensor Networks
 
-Additionally Environmental Remediation is also a possible application for microrobotics, but because of their relatively simplistic behavior, no need for communication and low-cost requirements, microrobots for Environmental Remediation will likely not include any CMOS Technology but rather manipulate existing Biological organisms or particles to achieve specific movement, reaction and replication.
+Additionally, [Environmental Remediation](https://en.wikipedia.org/wiki/Environmental_remediation) is also a possible application for microrobotics,
+but because of their relatively simplistic behavior, no need for communication and low-cost requirements, microrobots for Environmental Remediation
+will likely not include any CMOS Technology but rather manipulate existing Biological organisms or particles to achieve specific movement, reaction and replication.
 
-# The lack of popularity of electronics
-Many microrobotic researches see CMOS technology unsuited for microrobot applications [][][][][]. 
-Those reasons can generally divided into short-term problems and long-term problems.
-<br>
-<br>
 
-**Short-term problems:**
-- Cost
-- Power
-
-**Long-term problems:**
-- Reliabiity
-- Versatility
-- Scalability
-### Cost
-### Power
-### Reliability
-### Versatility
-### Scalability
-
-# The need for electronics
-
-### Aquiring deeper understanding of the Micro- and Nanoworld
-### Lowering cost of upcoming microrobotic products
 
 
 # References
