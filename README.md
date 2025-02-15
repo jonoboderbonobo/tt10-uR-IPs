@@ -21,15 +21,18 @@ If you are new to the field of **Microrobotics❤️** that's even better! For y
 [[1]](#1.1)
 <br>
 <br>
+<p align="middle">
 <figure style="text-align:center;">
   <img src="/docs/img/Antbot.gif" width="500" alt="Antbot" />
-  <figcaption>✅ A microbot</figcaption>
+  <figcaption>✅ A microbot [[2]](#2) </figcaption>
 </figure>
 
 <figure style="text-align:center;">
   <img src="/docs/img/Millidelta.gif" width="500" alt="Millidelta" />
-  <figcaption>❌ Not a microbot</figcaption>
+  <figcaption>❌ Not a microbot [[3]](#3)</figcaption>
 </figure>
+</p>
+
 
 
 
@@ -87,6 +90,13 @@ Those reasons can generally divided into short-term problems and long-term probl
 <a id="1.2">[1.2]</a> <br>
 [Mobile Microrobotics Definition (Page 4, 225 - 240).](https://archive.org/details/mobilemicrorobot0000sitt/page/4/mode/2up)
 <br>
+<a id="2">[2]</a> <br>
+[M. F. Reynolds et al., “Microscopic robots with onboard digital control,” Sci. Robot., vol. 7, no. 70, p. eabq2296, Sep. 2022, doi: 10.1126/scirobotics.abq2296.](https://www.science.org/doi/10.1126/scirobotics.abq2296)
+
+<a id="3">[3]</a> <br>
+[H. McClintock, F. Z. Temel, N. Doshi, J. Koh, and R. J. Wood, “The milliDelta: A high-bandwidth, high-precision, millimeter-scale Delta robot,” Sci. Robot., vol. 3, no. 14, p. eaar3018, Jan. 2018, doi: 10.1126/scirobotics.aar3018.](https://www.science.org/doi/10.1126/scirobotics.aar3018)
+
+
 <a id="8">[8]</a> <br>
 [U. Bozuyuk, P. Wrede, E. Yildiz, and M. Sitti, “Roadmap for Clinical Translation of Mobile Microrobotics,” Advanced Materials, vol. 36, no. 23, p. 2311462, Jun. 2024, doi: 10.1002/adma.202311462.](https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202311462)
 <br>
