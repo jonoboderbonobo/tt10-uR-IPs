@@ -21,10 +21,16 @@ If you are new to the field of **Microrobotics❤️** that's even better! For y
 [[1]](#1.1)
 <br>
 <br>
-<p align="middle">
-  <img src="/docs/img/Antbot.gif" width="500" /> 
-  <img src="/docs/img/Millidelta.gif" width="500" />
-</p>
+<figure style="text-align:center;">
+  <img src="/docs/img/Antbot.gif" width="500" alt="Antbot" />
+  <figcaption>✅ A microbot</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+  <img src="/docs/img/Millidelta.gif" width="500" alt="Millidelta" />
+  <figcaption>❌ Not a microbot</figcaption>
+</figure>
+
 
 
 # What can Microrobots used for?
