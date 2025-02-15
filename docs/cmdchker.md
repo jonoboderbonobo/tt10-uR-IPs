@@ -1,20 +1,30 @@
-# Command Checker
+# Command Checker [↩](documentation.md)
+## Table of contents
+### 1. [↪](#1-requirements-) Requirements
+### 2. [↪](#2-existing-sky130-open-source-circuits-) Existing Sky130 Open-Source Circuits
+### 3. [↪](#3-existing-nda-protected-circuits-) Existing NDA protected Circuits
+### 4. [↪](#4-design-goal-) Design Goal
+### 5. [↪](#5-schematic-) Schematic
+### 6. [↪](#6-verification-via-simulations-) Verification via Simulations
+### 7. [↪](#7-layout-) Layout
+### 8. [↪](#8-verification-via-post-layout-simulations-) Verification via Post-Layout Simulations
+### 9. [↪](#9-post-tapeout-testing-) Post-Tapeout Testing
 
-## Requirements
+# 1. Requirements [↩](#table-of-contents)
 
-## Existing Sky130 Open-Source Circuits
-None
-## Existing NDA protected Low-Power Small-Area Circuits
+# 2. Existing Sky130 Open-Source Circuits [↩](#table-of-contents)
 
-## Design Goal
+# 3. Existing NDA protected Circuits [↩](#table-of-contents)
 
-## Schematic
+# 4. Design Goal [↩](#table-of-contents)
 
-## Verification via Simulations
+# 5. Schematic [↩](#table-of-contents)
 
-## Layout
+# 6. Verification via Simulations [↩](#table-of-contents)
 
-## Verification via Post-Layout Simulations
+# 7. Layout [↩](#table-of-contents)
 
-## Post-Tapeout Testing
+# 8. Verification via Post-Layout Simulations [↩](#table-of-contents)
+
+# 9. Post-Tapeout Testing [↩](#table-of-contents)
 

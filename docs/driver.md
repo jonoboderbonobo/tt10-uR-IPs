@@ -1,4 +1,4 @@
-# Driver [↩](/documentation.md)
+# Driver [↩](documentation.md)
 ## Table of contents
 ### 1. [↪](#1-requirements-) Requirements
 ### 2. [↪](#2-existing-sky130-open-source-circuits-) Existing Sky130 Open-Source Circuits
