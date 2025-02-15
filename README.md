@@ -21,7 +21,7 @@ If you are new to the field of **Microrobotics❤️** that's even better! For y
 [[1]](#1.1)
 <br>
 <br>
-<p float="left">
+<p align="middle">
   <img src="/docs/img/Antbot.gif" width="100" /> 
   <img src="/docs/img/Millidelta.gif" width="100" />
 </p>
