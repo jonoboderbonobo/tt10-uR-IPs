@@ -56,7 +56,7 @@ I would like to mention following contributors here in one spot in addition to r
 
 # 4. Requirements [↩](#table-of-contents)
 Detailed information regarding each circuit can be found here:
-- [Startup](/startup.md)
+- [Startup](startup.md)
 - [Bandgap Voltage Reference](/bandgap.md)
 - [Relax Oscillator](/oscillator.md)
 - [Driver](/driver.md)
