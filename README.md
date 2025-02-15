@@ -21,22 +21,27 @@ If you are new to the field of **Microrobotics❤️** that's even better! For y
 [[1]](#1.1)
 <br>
 <br>
+
 <div style="display: flex; justify-content: center; gap: 2em;">
-  <figure style="text-align: center;">
-    <img src="/docs/img/Antbot.gif" width="300" alt="Antbot" />
+  <!-- First figure -->
+  <figure style="display: flex; flex-direction: column; align-items: center;">
+    <img src="/docs/img/Antbot.gif" width="500" alt="Antbot" />
     <figcaption>
       ✅ A microbot.
-      <a href="#2">[2]</a>  <!-- HTML link instead of Markdown -->
+      <a href="#2">[2]</a>
     </figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="/docs/img/Millidelta.gif" width="300" alt="Millidelta" />
+
+  <!-- Second figure -->
+  <figure style="display: flex; flex-direction: column; align-items: center;">
+    <img src="/docs/img/Millidelta.gif" width="500" alt="Millidelta" />
     <figcaption>
       ❌ Not a microbot.
-      <a href="#2">[2]</a>  <!-- HTML link instead of Markdown -->
+      <a href="#2">[2]</a>
     </figcaption>
   </figure>
 </div>
+
 
 
 
