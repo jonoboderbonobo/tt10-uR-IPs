@@ -1,4 +1,15 @@
 #  TT10 - Microrobot Circuits Documentation [↩](../README.md)
+This Tapeout explores some basic low-power, low-area circuits inspired by Michael F. Reynolds et. al. work[[1]](#1) as seen in the picture below.
+
+![Dogbot](img/Dogbot.png)
+## Detailed Information
+Detailed information regarding each circuit proposed in this tapeout can be found in its respective file:
+- [Startup](startup.md)
+- [Bandgap Voltage Reference](bandgap.md)
+- [Relax Oscillator](oscillator.md)
+- [Driver](driver.md)
+- [Manchester Decoder](decoder.md)
+- [Command Checker](cmdchker.md)
 ## Table of contents
 ### 1. [↪](#1-background-of-this-tapeout-) Background of this Tapeout
 ### 2. [↪](#2-microrobots-with-on-board-actuation-) Microrobots with On-Board Actuation
@@ -8,8 +19,6 @@
 ### 6. [↪](#6-layouts-) Layouts
 ### 7. [↪](#7-verification-) Verification
 ### 8. [↪](#8-testing-) Testing
-
-
 # 1. Background of this Tapeout [↩](#table-of-contents)
 This tapeout is part of the [Open Source Mobile Microrobotics Framework SuRF 🏄‍♀️](https://github.com/jonoboderbonobo/surf/) and aims to provide Silicon Proven-, Tested-, Open Source-, Reusable Circuit-Blocks for Microrobots with On-Board Actuation. 
 <br> 
@@ -55,42 +64,16 @@ I would like to mention following contributors here in one spot in addition to r
 - Everyone else in the Open-Source community I am ignorant to even know, but who still make it possible for someone without the financial possibilities to engage hands on IC-design.
 
 # 4. Requirements [↩](#table-of-contents)
-Detailed information regarding each circuit can be found here:
-- [Startup](startup.md)
-- [Bandgap Voltage Reference](bandgap.md)
-- [Relax Oscillator](oscillator.md)
-- [Driver](driver.md)
-- [Manchester Decoder](decoder.md)
-- [Command Checker](cmdchker.md)
+Detailed information regarding each circuit can be found [here:](#detailed-information)
 # 5. Schematics [↩](#table-of-contents)
-Detailed information regarding each circuit can be found here:
-- [Startup](startup.md)
-- [Bandgap Voltage Reference](bandgap.md)
-- [Relax Oscillator](oscillator.md)
-- [Driver](driver.md)
-- [Manchester Decoder](decoder.md)
-- [Command Checker](cmdchker.md)
+Detailed information regarding each circuit can be found [here:](#detailed-information)
 # 6. Layouts [↩](#table-of-contents)
-Detailed information regarding each circuit can be found here:
-- [Startup](startup.md)
-- [Bandgap Voltage Reference](bandgap.md)
-- [Relax Oscillator](oscillator.md)
-- [Driver](driver.md)
-- [Manchester Decoder](decoder.md)
-- [Command Checker](cmdchker.md)
+Detailed information regarding each circuit can be found [here:](#detailed-information)
 # 7. Verification [↩](#table-of-contents)
-Detailed information regarding each circuit can be found here:
-- [Startup](startup.md)
-- [Bandgap Voltage Reference](bandgap.md)
-- [Relax Oscillator](/oscillator.md)
-- [Driver](driver.md)
-- [Manchester Decoder](decoder.md)
-- [Command Checker](cmdchker.md)
+Detailed information regarding each circuit can be found [here:](#detailed-information)
 # 8. Testing [↩](#table-of-contents)
-Detailed information regarding each circuit can be found here:
-- [Startup](startup.md)
-- [Bandgap Voltage Reference](bandgap.md)
-- [Relax Oscillator](oscillator.md)
-- [Driver](driver.md)
-- [Manchester Decoder](decoder.md)
-- [Command Checker](cmdchker.md)
+Detailed information regarding each circuit can be found [here:](#detailed-information)
+
+# References
+<a id="1">[1]</a> <br>
+[M. F. Reynolds et al., “Microscopic robots with onboard digital control,” Sci. Robot., vol. 7, no. 70, p. eabq2296, Sep. 2022, doi: 10.1126/scirobotics.abq2296.](https://www.science.org/doi/10.1126/scirobotics.abq2296)
