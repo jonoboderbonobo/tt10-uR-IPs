@@ -21,17 +21,20 @@ If you are new to the field of **Microrobotics❤️** that's even better! For y
 [[1]](#1.1)
 <br>
 <br>
-<p align="middle">
-<figure style="text-align:center;">
-  <img src="/docs/img/Antbot.gif" width="500" alt="Antbot" />
-  <figcaption>✅ A microbot [[2]](#2) </figcaption>
-</figure>
 
-<figure style="text-align:center;">
-  <img src="/docs/img/Millidelta.gif" width="500" alt="Millidelta" />
-  <figcaption>❌ Not a microbot [[3]](#3)</figcaption>
-</figure>
-</p>
+<div style="display: flex; justify-content: center; gap: 2em;">
+  <figure style="text-align: center;">
+    <img src="/docs/img/Antbot.gif" width="300" alt="Antbot" />
+    <figcaption>✅ A microbot.</figcaption>
+  </figure>
+  <figure style="text-align: center;">
+    <img src="/docs/img/Millidelta.gif" width="300" alt="Millidelta" />
+    <figcaption>❌ Not a microbot.</figcaption>
+  </figure>
+</div>
+[[2]](#2) 
+[[3]](#3)
+
 
 
 
