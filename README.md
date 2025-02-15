@@ -22,8 +22,8 @@ If you are new to the field of **Microrobotics❤️** that's even better! For y
 <br>
 <br>
 <p align="middle">
-  <img src="/docs/img/Antbot.gif" width="100" /> 
-  <img src="/docs/img/Millidelta.gif" width="100" />
+  <img src="/docs/img/Antbot.gif" width="400" /> 
+  <img src="/docs/img/Millidelta.gif" width="400" />
 </p>
 
 
