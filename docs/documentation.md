@@ -17,7 +17,7 @@ This tapeout is part of the [Open Source Mobile Microrobotics Framework SuRF �
 In particular providing **low-power** and **low-area** circuits to enable the testing of a wide range of different actuation, communication and energy harvesting methods in real-life szenarios for researchers and engineers.
 <br>
 <br>  
-This particular tapeout only lays the groundwork for future tapeouts as you can read [here](#3-disclaimer-back).
+This particular tapeout only lays the groundwork for future tapeouts as you can read [here](#3-disclaimer-).
 
 # 2. Microrobots with On-Board Actuation [↩](#table-of-contents)
 
@@ -55,7 +55,42 @@ I would like to mention following contributors here in one spot in addition to r
 - Everyone else in the Open-Source community I am ignorant to even know, but who still make it possible for someone without the financial possibilities to engage hands on IC-design.
 
 # 4. Requirements [↩](#table-of-contents)
+Detailed information regarding each circuit can be found here:
+- [Startup](/startup.md)
+- [Bandgap Voltage Reference](/bandgap.md)
+- [Relax Oscillator](/oscillator.md)
+- [Driver](/driver.md)
+- [Manchester Decoder](/decoder.md)
+- [Command Checker](/cmdchker.md)
 # 5. Schematics [↩](#table-of-contents)
+Detailed information regarding each circuit can be found here:
+- [Startup](/startup.md)
+- [Bandgap Voltage Reference](/bandgap.md)
+- [Relax Oscillator](/oscillator.md)
+- [Driver](/driver.md)
+- [Manchester Decoder](/decoder.md)
+- [Command Checker](/cmdchker.md)
 # 6. Layouts [↩](#table-of-contents)
+Detailed information regarding each circuit can be found here:
+- [Startup](/startup.md)
+- [Bandgap Voltage Reference](/bandgap.md)
+- [Relax Oscillator](/oscillator.md)
+- [Driver](/driver.md)
+- [Manchester Decoder](/decoder.md)
+- [Command Checker](/cmdchker.md)
 # 7. Verification [↩](#table-of-contents)
+Detailed information regarding each circuit can be found here:
+- [Startup](/startup.md)
+- [Bandgap Voltage Reference](/bandgap.md)
+- [Relax Oscillator](/oscillator.md)
+- [Driver](/driver.md)
+- [Manchester Decoder](/decoder.md)
+- [Command Checker](/cmdchker.md)
 # 8. Testing [↩](#table-of-contents)
+Detailed information regarding each circuit can be found here:
+- [Startup](/startup.md)
+- [Bandgap Voltage Reference](/bandgap.md)
+- [Relax Oscillator](/oscillator.md)
+- [Driver](/driver.md)
+- [Manchester Decoder](/decoder.md)
+- [Command Checker](/cmdchker.md)
