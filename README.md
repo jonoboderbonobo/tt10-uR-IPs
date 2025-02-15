@@ -22,25 +22,9 @@ If you are new to the field of **Microrobotics❤️** that's even better! For y
 <br>
 <br>
 
-<div style="display: flex; justify-content: center; gap: 2em;">
-  <!-- First figure -->
-  <figure style="display: flex; flex-direction: column; align-items: center;">
-    <img src="/docs/img/Antbot.gif" width="500" alt="Antbot" />
-    <figcaption>
-      ✅ A microbot.
-      <a href="#2">[2]</a>
-    </figcaption>
-  </figure>
-
-  <!-- Second figure -->
-  <figure style="display: flex; flex-direction: column; align-items: center;">
-    <img src="/docs/img/Millidelta.gif" width="500" alt="Millidelta" />
-    <figcaption>
-      ❌ Not a microbot.
-      <a href="#2">[2]</a>
-    </figcaption>
-  </figure>
-</div>
+| <img src="/docs/img/Antbot.gif" width="500" alt="Antbot" /> | <img src="/docs/img/Millidelta.gif" width="500" alt="Millidelta" /> |
+| :--: | :--: |
+| ✅ A microbot. [2] | ❌ Not a microbot. [2] |
 
 
 
