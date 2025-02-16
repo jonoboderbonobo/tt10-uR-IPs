@@ -51,11 +51,11 @@ I would like to mention following contributors here in one spot in addition to r
 
 
 # 3. Requirements [↩](#tt10---microrobot-circuits-documentation-)
-To understand the requirements on the circuits whe first have to understand the circuits mission profile, before moving to the requirements on the respective subcircuits.
-# Mission Profile
-For this tapeout, a design similar to Michael F. Reynolds et al. [[1]](#1) was selected. I acknowledge that these specifications differ from real-world applications and will refine them in future iterations.
+To understand the requirements on the circuits we first have to understand the circuits mission profile. The mission profile is heavily influenced by "Dogbot" as well as arbitrary design choices by myself rather than a real world application.
+## Dogbot: similarities and differences
+For this tapeout, a design similar to Michael F. Reynolds et al. Dogbot [[1]](#1) was selected.
 
-### Potential improvements of Dogbot:
+### Limitations of Dogot:
 - circuit built with NDA protected PDK
     - [XT018](https://www.xfab.com/xt018) from X-FAB Silicon Foundries
 - low speed
@@ -73,7 +73,7 @@ Using Skywater130 PDK and changing the actuation method from electrochemical act
 - relatively enviroment independant
 
 with the downside of aquiring all energy needed for actuation from on-chip energy harvesting, which can be compensated by the high energy efficiency.
-### Design choice :
+### Resulting Design Choices :
 - Dimensions
     - overall size: 100x100 um
     - chip size: 50x100 um
@@ -99,16 +99,27 @@ with the downside of aquiring all energy needed for actuation from on-chip energ
     - com direction: receiving only
     - Package Size: 4-Bit
     - Commands: 8
+- Energy Harvesting
+    - Conversion type: Photovolatic
+    - Efficiency: 20%
+    - Voltage Level: 2V
 - No Sensing
 
+## Mission Profile
+As previously stated, no explicit application scenario is required. Instead, a customized mission profile was chosen to align with Dogbot-like requirements while still providing sufficient design challenges. 
+```
+Two microrobots sort human cells scattered on a silicon wafer. This wafer is located in a controlled environment without notable airflow, electromagnetic interference, vibration or temperature gradients. Both robots receive the same broadcast commands from a single monitoring program that uses a camera for observing the wafer’s surface.
+```
 
-# General
-General information on microrobot requirements regarding on-board electronics can be found [here](https://github.com/jonoboderbonobo/surf/specs/requirements_on_microrobots.md), but can be condensed to:
+### Data
+- light
+    - intensity:
+    - TBD
+- TBD
+## Circuit Requirements
+Depending on the previous discussed mission profile, we can now determine the requirements on each of the sub-circuits.
+<br>
 
- - **ultra-low-power (ULP)**
- - **low-cost** 
-
-## Detailed
 Detailed information regarding each circuit can be found in their respective files:
 - [Startup](startup.md)
 - [Bandgap Voltage Reference](bandgap.md)
@@ -118,12 +129,72 @@ Detailed information regarding each circuit can be found in their respective fil
 - [Command Checker](cmdchker.md)
 <br>
 
+General information on microrobot requirements regarding on-board electronics can be found [here](https://github.com/jonoboderbonobo/surf/specs/requirements_on_microrobots.md), but can be condensed to:
+
+ - **ultra-low-power (ULP)**
+ - **low-cost** 
+
 ## Startup Requirements
+| Metric                  | Unit | Dogbot | Goal | TT10 |
+|----------------------|---------|----------------|------|------|
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+
 ## BGR Requirements
+| Metric                  | Unit | Dogbot | Goal | TT10 |
+|----------------------|---------|----------------|------|------|
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
 ## Clock Requirements
+| Metric                  | Unit | Dogbot | Goal | TT10 |
+|----------------------|---------|----------------|------|------|
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
 ## Driver Requirements
+| Metric                  | Unit | Dogbot | Goal | TT10 |
+|----------------------|---------|----------------|------|------|
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
 ## Decoder Requirements
+| Metric                  | Unit | Dogbot | Goal | TT10 |
+|----------------------|---------|----------------|------|------|
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
 ## Command Checker Requirements
+| Metric                  | Unit | Dogbot | Goal | TT10 |
+|----------------------|---------|----------------|------|------|
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
 
 
 # 4. Schematics [↩](#tt10---microrobot-circuits-documentation-)
@@ -135,6 +206,14 @@ Detailed information regarding each circuit can be found in their respective fil
 - [Manchester Decoder](decoder.md)
 - [Command Checker](cmdchker.md)
 <br>
+
+## Startup 
+## BGR 
+## Clock 
+## Driver 
+## Decoder 
+## Command Checker 
+
 # 5. Layouts [↩](#tt10---microrobot-circuits-documentation-)
 Detailed information regarding each circuit can be found in their respective files:
 - [Startup](startup.md)
@@ -144,6 +223,14 @@ Detailed information regarding each circuit can be found in their respective fil
 - [Manchester Decoder](decoder.md)
 - [Command Checker](cmdchker.md)
 <br>
+
+## Startup 
+## BGR 
+## Clock 
+## Driver 
+## Decoder 
+## Command Checker 
+
 # 6. Verification [↩](#tt10---microrobot-circuits-documentation-)
 Detailed information regarding each circuit can be found in their respective files:
 - [Startup](startup.md)
@@ -153,15 +240,18 @@ Detailed information regarding each circuit can be found in their respective fil
 - [Manchester Decoder](decoder.md)
 - [Command Checker](cmdchker.md)
 <br>
-# 7. Testing [↩](#tt10---microrobot-circuits-documentation-)
-Detailed information regarding each circuit can be found in their respective files:
-- [Startup](startup.md)
-- [Bandgap Voltage Reference](bandgap.md)
-- [Relax Oscillator](oscillator.md)
-- [Driver](driver.md)
-- [Manchester Decoder](decoder.md)
-- [Command Checker](cmdchker.md)
-<br>
+
+## Startup 
+## BGR 
+## Clock 
+## Driver 
+## Decoder 
+## Command Checker 
+
+# 7. ⚠️Testing⚠️ [↩](#tt10---microrobot-circuits-documentation-)
+Testing can only be done after the estimated delivery date:
+<center>15.November 2025</center>
+
 
 # References
 <a id="1">[1]</a> <br>
