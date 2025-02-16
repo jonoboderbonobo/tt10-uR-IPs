@@ -19,7 +19,7 @@ Detailed information regarding each circuit proposed in this tapeout can be foun
 ### 6. [↪](#6-layouts-) Layouts
 ### 7. [↪](#7-verification-) Verification
 ### 8. [↪](#8-testing-) Testing
-# 1. Background of this Tapeout [↩](#table-of-contents)
+# 1. Background of this Tapeout [↩](#tt10---microrobot-circuits-documentation-)
 This tapeout is part of the [Open Source Mobile Microrobotics Framework SuRF 🏄‍♀️](https://github.com/jonoboderbonobo/surf/) and aims to provide Silicon Proven-, Tested-, Open Source-, Reusable Circuit-Blocks for Microrobots with On-Board Actuation. 
 <br> 
 <br>
@@ -28,9 +28,9 @@ In particular providing **low-power** and **low-area** circuits to enable the te
 <br>  
 This particular tapeout only lays the groundwork for future tapeouts as you can read [here](#3-disclaimer-).
 
-# 2. Microrobots with On-Board Actuation [↩](#table-of-contents)
+# 2. Microrobots with On-Board Actuation [↩](#tt10---microrobot-circuits-documentation-)
 
-# 3. Disclaimer [↩](#table-of-contents)
+# 3. Disclaimer [↩](#tt10---microrobot-circuits-documentation-)
 ### Quality
 This is the first time for me, a student, designing any integrated circuit. I therefore do not recommend engaging in any of the proposed circuits before I confirmed their behavior by physically testing them. This tapeout only lays the groundwork for future iterations. 
 <br> 
@@ -63,15 +63,15 @@ I would like to mention following contributors here in one spot in addition to r
 - TBD
 - Everyone else in the Open-Source community I am ignorant to even know, but who still make it possible for someone without the financial possibilities to engage hands on IC-design.
 
-# 4. Requirements [↩](#table-of-contents)
+# 4. Requirements [↩](#tt10---microrobot-circuits-documentation-)
 Detailed information regarding each circuit can be found [here:](#detailed-information)
-# 5. Schematics [↩](#table-of-contents)
+# 5. Schematics [↩](#tt10---microrobot-circuits-documentation-)
 Detailed information regarding each circuit can be found [here:](#detailed-information)
-# 6. Layouts [↩](#table-of-contents)
+# 6. Layouts [↩](#tt10---microrobot-circuits-documentation-)
 Detailed information regarding each circuit can be found [here:](#detailed-information)
-# 7. Verification [↩](#table-of-contents)
+# 7. Verification [↩](#tt10---microrobot-circuits-documentation-)
 Detailed information regarding each circuit can be found [here:](#detailed-information)
-# 8. Testing [↩](#table-of-contents)
+# 8. Testing [↩](#tt10---microrobot-circuits-documentation-)
 Detailed information regarding each circuit can be found [here:](#detailed-information)
 
 # References

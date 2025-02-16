@@ -21,6 +21,8 @@ N 460 -270 460 -250 {lab=Vss}
 N 260 -470 260 -450 {lab=Vdd}
 N 460 -470 460 -450 {lab=Vdd}
 N 680 -410 680 -390 {lab=Vdd}
+N 460 -250 460 -180 {lab=Vss}
+N 260 -180 460 -180 {lab=Vss}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 280 -420 2 0 {name=M10
 L=0.7
 W=1
@@ -60,7 +62,6 @@ C {ipin.sym} 55 -370 0 0 {name=p2 lab=Vss}
 C {opin.sym} 35 -340 0 0 {name=p3 lab=Vout}
 C {lab_wire.sym} 730 -230 0 0 {name=p4 sig_type=std_logic lab=Vout}
 C {lab_wire.sym} 680 -410 0 0 {name=p5 sig_type=std_logic lab=Vdd}
-C {lab_wire.sym} 460 -250 0 0 {name=p6 sig_type=std_logic lab=Vss}
 C {lab_wire.sym} 260 -180 0 0 {name=p7 sig_type=std_logic lab=Vss}
 C {lab_wire.sym} 460 -470 0 0 {name=p9 sig_type=std_logic lab=Vdd}
 C {lab_wire.sym} 260 -470 0 0 {name=p10 sig_type=std_logic lab=Vdd}

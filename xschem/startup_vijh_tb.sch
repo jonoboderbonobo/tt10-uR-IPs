@@ -105,4 +105,3 @@ value="
 
 "
 spice_ignore=false}
-C {startup_vijh.sym} 1210 -550 0 0 {name=x1}
