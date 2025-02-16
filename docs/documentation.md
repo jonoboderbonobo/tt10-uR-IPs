@@ -1,97 +1,171 @@
 #  TT10 - Microrobot Circuits Documentation [↩](../README.md)
-This Tapeout explores some basic low-power, low-area circuits inspired by Michael F. Reynolds et. al. work[[1]](#1) as seen in the picture below.
+This Tapeout explores some basic low-power, low-cost circuits inspired by Michael F. Reynolds et. al. work Microscopic robots with onboard digital control (2022) [[1]](#1). 
+<br>
+
+The image below shows one of the papers robots. This "Dogbot" is able to harvest-energy, receive commands and move on it's own without the need of external actuation.
 
 ![Dogbot](img/Dogbot.png)
-## Detailed Information
-Detailed information regarding each circuit proposed in this tapeout can be found in its respective file:
-- [Startup](startup.md)
-- [Bandgap Voltage Reference](bandgap.md)
-- [Relax Oscillator](oscillator.md)
-- [Driver](driver.md)
-- [Manchester Decoder](decoder.md)
-- [Command Checker](cmdchker.md)
+
+
 ## Table of contents
 ### 1. [↪](#1-background-of-this-tapeout-) Background of this Tapeout
-### 2. [↪](#2-microrobots-with-on-board-actuation-) Microrobots with On-Board Actuation
-### 3. [↪](#3-disclaimer-) Disclaimer
-### 4. [↪](#4-requirements-) Requirements
-### 5. [↪](#5-schematics-) Schematics
-### 6. [↪](#6-layouts-) Layouts
-### 7. [↪](#7-verification-) Verification
-### 8. [↪](#8-testing-) Testing
+### 2. [↪](#3-disclaimer-) Disclaimer
+### 3. [↪](#4-requirements-) Requirements
+### 4. [↪](#5-schematics-) Schematics
+### 5. [↪](#6-layouts-) Layouts
+### 6. [↪](#7-verification-) Verification
+### 7. [↪](#8-testing-) Testing
 
 
 
 # 1. Background of this Tapeout [↩](#tt10---microrobot-circuits-documentation-)
-This tapeout is part of the [Open Source Mobile Microrobotics Framework SuRF 🏄‍♀️](https://github.com/jonoboderbonobo/surf/) and aims to provide Silicon Proven-, Tested-, Open Source-, Reusable Circuit-Blocks for Microrobots with On-Board Actuation. 
+This tapeout supports the [Open Source Mobile Microrobotics Framework SuRF 🏄‍♀️](https://github.com/jonoboderbonobo/surf/), providing silicon-proven, open source circuit blocks for on-board actuation. These low-power, low-cost designs help researchers and engineers test a wide range of actuation, communication, and energy-harvesting methods in real-life conditions. 
 <br> 
-<br>
-In particular providing **low-power** and **low-area** circuits to enable the testing of a wide range of different actuation, communication and energy harvesting methods in real-life szenarios for researchers and engineers.
-<br>
-<br>  
-This particular tapeout only lays the groundwork for future tapeouts as you can read [here](#3-disclaimer-).
 
-# 2. Microrobots with On-Board Actuation [↩](#tt10---microrobot-circuits-documentation-)
+With SuRF 🏄‍♀️, the goal is to bring microrobotics closer to practical applications.
 
-# 3. Disclaimer [↩](#tt10---microrobot-circuits-documentation-)
+# 2. Disclaimer [↩](#tt10---microrobot-circuits-documentation-)
 ### Quality
 This is the first time for me, a student, designing any integrated circuit. I therefore do not recommend engaging in any of the proposed circuits before I confirmed their behavior by physically testing them. This tapeout only lays the groundwork for future iterations. 
 <br> 
 
 ### Originality
 The source of all the proposed circuits is **not** my creativity, but rather blatant copies of other poeples work. 
-Even creating working circuits is infact only a secondary goal in this tapeout.
-<br>
-#### Main Goals
-- Getting familiar with the OS-Toolchain
-    - especially ngspice
-    - creating modular testbenches for later iterations
-- Comparing existing circuits
-    - Tiny Tapeout circuits
-    - Low-power, low-area circuits of older technology nodes
+Even making those circuits working is infact only a secondary goal in this tapeout.
 <br>
 
-#### Shoutout
+### Shoutout
 I would like to mention following contributors here in one spot in addition to referencing throughout the documenation:
-- [Metin Sitti](https://en.wikipedia.org/wiki/Metin_Sitti) for encouraging me in the need of more application-oriented point of view in microrobotics throught his [papers](https://scholar.google.com/citations?user=YU4Ce_MAAAAJ&hl=de), [book](https://archive.org/details/mobilemicrorobot0000sitt/mode/2up) and in person. What ultimately let to the creation of SuRF 🏄‍♀️.
-- [Harald Pretl](https://iic.jku.at/team/pretl/) for encouraging me in the feasibility of creating my own microrobot ICs. And additionally for simplifying the tool setup in this [docker](https://github.com/iic-jku/IIC-OSIC-TOOLS/).
+- [Metin Sitti](https://en.wikipedia.org/wiki/Metin_Sitti) for encouraging me in the need of more application-oriented point of view in microrobotics throught his [papers](https://scholar.google.com/citations?user=YU4Ce_MAAAAJ&hl=de), [book](https://archive.org/details/mobilemicrorobot0000sitt/mode/2up) and in person.
+- [Harald Pretl](https://iic.jku.at/team/pretl/) for encouraging me in the feasibility of creating my own microrobot ICs. And additionally for simplifying the setup for all the tools by providing a [docker container](https://github.com/iic-jku/IIC-OSIC-TOOLS/).
 - [Matt Venn](https://www.zerotoasiccourse.com/matt_venn/) for making it possible to a poor student like me to engage in hands on IC-Design by founding [Tiny Tapeout](https://tinytapeout.com/).
 - [Carsten Wulff](https://analogicus.com/) for teaching me alot about IC-Design by making his [Script](https://analogicus.com/aic2024/assets/aic.pdf), [Slides](https://analogicus.com/aic2024/) and [Lectures](https://www.youtube.com/watch?v=DVBnfpi90Cs&list=PLybHXZ9FyEhbm9-A3QR1NRlt6VxeTXYr5) public.
 - [Stefan Schippers](https://www.youtube.com/@stefsport2002/videos) for maintaining [xschem](https://github.com/StefanSchippers/xschem)
-- [Hisham Elreedy](https://github.com/hishamelreedy) for designing, testing and documenting a [bandgap-voltage-reference](https://github.com/hishamelreedy/BandGapReference_sky130) in sky130. 
-- [John Kustin](https://github.com/johnkustin) for designing, testing and documenting a [bandgap-voltage-reference](https://github.com/johnkustin/bandgapReferenceCircuit) in sky130. 
+- [Hisham Elreedy](https://github.com/hishamelreedy) for designing, testing and documenting a [bandgap-voltage-reference](https://github.com/hishamelreedy/BandGapReference_sky130) in sky130 so I could learn from it.
+- [John Kustin](https://github.com/johnkustin) for designing, testing and documenting a [bandgap-voltage-reference](https://github.com/johnkustin/bandgapReferenceCircuit) in sky130 so I could learn from it.
 - TBD
 - TBD
 - TBD
 - TBD
-- Everyone else in the Open-Source community I am ignorant to even know, but who still make it possible for someone without the financial possibilities to engage hands on IC-design.
+- Everyone else in the Open-Source community I am too ignorant to even know, but who still make it possible for someone without the financial possibilities to engage hands on IC-design.
 
-# 4. Requirements [↩](#tt10---microrobot-circuits-documentation-)
-Detailed information regarding each circuit can be found [here:](#detailed-information)
-<br>
 
-General information on Microrobot Requirements can be found [here](https://github.com/jonoboderbonobo/surf/specs/requirements_on_microrobots.md).
+# 3. Requirements [↩](#tt10---microrobot-circuits-documentation-)
+To understand the requirements on the circuits whe first have to understand the circuits mission profile, before moving to the requirements on the respective subcircuits.
+# Mission Profile
+For this tapeout, a design similar to Michael F. Reynolds et al. [[1]](#1) was selected. I acknowledge that these specifications differ from real-world applications and will refine them in future iterations.
 
-Tl;dr:
+### Potential improvements of Dogbot:
+- circuit built with NDA protected PDK
+    - [XT018](https://www.xfab.com/xt018) from X-FAB Silicon Foundries
+- low speed
+    - $ v_{max} = 0.1 \text{ body lengths per second} = 10 \frac{\text{um}}{\text{s}}$ 
+- low energy efficiency 
+    - $\eta = 10^{-11} = 0.000000001\%$
+- enviroment dependant actuation method
+    - $\text{Solution with } \mathrm{OH}^{-}, \mathrm{H_2O}, \mathrm{H_2PO4}^{-} \text{ or } \mathrm{O2}^{-}
+    $ [[2]](#2)
+### Proposed Solutions:
+Using Skywater130 PDK and changing the actuation method from electrochemical actuation to piezoelectric actuation results in:
+- no NDA required
+- $ v_{max}=1 \text{ BDL/s} = 100 \frac{\text{um}}{\text{s}}$ 
+- $\eta > 1\% $
+- relatively enviroment independant
+
+with the downside of aquiring all energy needed for actuation from on-chip energy harvesting, which can be compensated by the high energy efficiency.
+### Design choice :
+- Dimensions
+    - overall size: 100x100 um
+    - chip size: 50x100 um
+    - actuator count: 4
+    - actuator size: 25x50 um
+    - body-surface distance (leg length): 25 um
+- Movement:
+    - locomtion type: crawling
+    - crawling type: stick-slip
+    - actuation type: piezo-electric actuation
+    - Number legs: 4
+    - locomotion type: TBD
+    - speed: 1 body-length/s = 100 um/s
+- Enviroment
+    - interface: solid-fluid
+    - solid: smooth SiO2 (Wafer Surface)
+    - fluid: air (as gas) 
+    - temperature 290-310 K
+    - external forces: None
+- Communication
+    - transmission type: undefined
+    - transmission speed: TBD
+    - com direction: receiving only
+    - Package Size: 4-Bit
+    - Commands: 8
+- No Sensing
+
+
+# General
+General information on microrobot requirements regarding on-board electronics can be found [here](https://github.com/jonoboderbonobo/surf/specs/requirements_on_microrobots.md), but can be condensed to:
+
  - **ultra-low-power (ULP)**
  - **low-cost** 
 
-stealing circuits from
-- IoT
-- biomedical implants
-- space electronics
+## Detailed
+Detailed information regarding each circuit can be found in their respective files:
+- [Startup](startup.md)
+- [Bandgap Voltage Reference](bandgap.md)
+- [Relax Oscillator](oscillator.md)
+- [Driver](driver.md)
+- [Manchester Decoder](decoder.md)
+- [Command Checker](cmdchker.md)
+<br>
+
+## Startup Requirements
+## BGR Requirements
+## Clock Requirements
+## Driver Requirements
+## Decoder Requirements
+## Command Checker Requirements
 
 
-
-# 5. Schematics [↩](#tt10---microrobot-circuits-documentation-)
-Detailed information regarding each circuit can be found [here:](#detailed-information)
-# 6. Layouts [↩](#tt10---microrobot-circuits-documentation-)
-Detailed information regarding each circuit can be found [here:](#detailed-information)
-# 7. Verification [↩](#tt10---microrobot-circuits-documentation-)
-Detailed information regarding each circuit can be found [here:](#detailed-information)
-# 8. Testing [↩](#tt10---microrobot-circuits-documentation-)
-Detailed information regarding each circuit can be found [here:](#detailed-information)
+# 4. Schematics [↩](#tt10---microrobot-circuits-documentation-)
+Detailed information regarding each circuit can be found in their respective files:
+- [Startup](startup.md)
+- [Bandgap Voltage Reference](bandgap.md)
+- [Relax Oscillator](oscillator.md)
+- [Driver](driver.md)
+- [Manchester Decoder](decoder.md)
+- [Command Checker](cmdchker.md)
+<br>
+# 5. Layouts [↩](#tt10---microrobot-circuits-documentation-)
+Detailed information regarding each circuit can be found in their respective files:
+- [Startup](startup.md)
+- [Bandgap Voltage Reference](bandgap.md)
+- [Relax Oscillator](oscillator.md)
+- [Driver](driver.md)
+- [Manchester Decoder](decoder.md)
+- [Command Checker](cmdchker.md)
+<br>
+# 6. Verification [↩](#tt10---microrobot-circuits-documentation-)
+Detailed information regarding each circuit can be found in their respective files:
+- [Startup](startup.md)
+- [Bandgap Voltage Reference](bandgap.md)
+- [Relax Oscillator](oscillator.md)
+- [Driver](driver.md)
+- [Manchester Decoder](decoder.md)
+- [Command Checker](cmdchker.md)
+<br>
+# 7. Testing [↩](#tt10---microrobot-circuits-documentation-)
+Detailed information regarding each circuit can be found in their respective files:
+- [Startup](startup.md)
+- [Bandgap Voltage Reference](bandgap.md)
+- [Relax Oscillator](oscillator.md)
+- [Driver](driver.md)
+- [Manchester Decoder](decoder.md)
+- [Command Checker](cmdchker.md)
+<br>
 
 # References
 <a id="1">[1]</a> <br>
 [M. F. Reynolds et al., “Microscopic robots with onboard digital control,” Sci. Robot., vol. 7, no. 70, p. eabq2296, Sep. 2022, doi: 10.1126/scirobotics.abq2296.](https://www.science.org/doi/10.1126/scirobotics.abq2296)
+
+<a id="2">[2]</a> <br>
+[M. Z. Miskin et al., “Electronically integrated, mass-manufactured, microscopic robots,” Nature, vol. 584, no. 7822, pp. 557–561, Aug. 2020, doi: 10.1038/s41586-020-2626-9.](https://www.nature.com/articles/s41586-020-2626-9)

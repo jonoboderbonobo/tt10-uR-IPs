@@ -1,5 +1,5 @@
 # Startup Circuit [↩](documentation.md)
-Different types of Startup Circuits and their aptitude regarding microrobotic circuits are discussed in [SuRFs🏄‍♀️ teaching materials]().
+Different types of Startup Circuits and their aptitude regarding microrobotic circuits are discussed in [SuRFs🏄‍♀️ teaching materials](https://github.com/jonoboderbonobo/surf/specs/startup_circuits.md).
 ## Table of contents
 ### 1. [↪](#1-requirements-) Requirements
 ### 2. [↪](#2-existing-sky130-open-source-circuits-) Existing Sky130 Open-Source Circuits
