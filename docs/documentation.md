@@ -19,6 +19,9 @@ Detailed information regarding each circuit proposed in this tapeout can be foun
 ### 6. [↪](#6-layouts-) Layouts
 ### 7. [↪](#7-verification-) Verification
 ### 8. [↪](#8-testing-) Testing
+
+
+
 # 1. Background of this Tapeout [↩](#tt10---microrobot-circuits-documentation-)
 This tapeout is part of the [Open Source Mobile Microrobotics Framework SuRF 🏄‍♀️](https://github.com/jonoboderbonobo/surf/) and aims to provide Silicon Proven-, Tested-, Open Source-, Reusable Circuit-Blocks for Microrobots with On-Board Actuation. 
 <br> 
@@ -65,6 +68,21 @@ I would like to mention following contributors here in one spot in addition to r
 
 # 4. Requirements [↩](#tt10---microrobot-circuits-documentation-)
 Detailed information regarding each circuit can be found [here:](#detailed-information)
+<br>
+
+General information on Microrobot Requirements can be found [here](https://github.com/jonoboderbonobo/surf/specs/requirements_on_microrobots.md).
+
+Tl;dr:
+ - **ultra-low-power (ULP)**
+ - **low-cost** 
+
+stealing circuits from
+- IoT
+- biomedical implants
+- space electronics
+
+
+
 # 5. Schematics [↩](#tt10---microrobot-circuits-documentation-)
 Detailed information regarding each circuit can be found [here:](#detailed-information)
 # 6. Layouts [↩](#tt10---microrobot-circuits-documentation-)
