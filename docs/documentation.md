@@ -1,44 +1,22 @@
 #  TT10 - Microrobot Circuits Documentation [↩](../README.md)
+
+Detailed information regarding each circuit can be found in their respective files:
+- [Piezoelectric Actuation Driver](driver.md)
+- [Relaxation Oscillator](oscillator.md)
+- [Current Reference (PTAT)](reference.md)
+- [Power-on-Reset](supervisory.md)
+- [Startup](startup.md)
+- [ESD Protection](esd.md)
+- [Decoder](decoder.md)
+- [Computation](cmdchker.md)
+
 This Tapeout explores some basic low-power, low-cost circuits inspired by Michael F. Reynolds et. al. work Microscopic robots with onboard digital control (2022) [[1]](#1). 
 <br>
 
 The image below shows one of the papers robots. This "Dogbot" is able to harvest-energy, receive commands and move on it's own without the need of external actuation.
 
 ![Dogbot](img/Dogbot.png)
-
-This tapeout tries to replicate those circuits with an Open Source PDK.
 <br>
-
-
-| Circuit Type      | Dogbot | TT10 Simulated |
-|----------------------|---------|----------------|
-| Energy Harvesting |Photovoltaic|Photovoltaic|
-| Actuation |Electrochemical|Piezoelectric|
-| Receiver |Optical |TBD| 
-
-
-
-| Circuit Type      | Dogbot | TT10 Hardware |
-|----------------------|---------|----------------|
-| Driver |unknown|TBD| 
-| Clock| Relaxation Oscillator |Relaxation Oscillator| 
-| Reference |PTAT|PTAT| 
-| Startup|Capacitor|Diode | 
-| ESD Protection|unkown|TDB| 
-| Decoder|Manchester|Manchester| 
-| Computation|Command Checker|Command Checker| 
-| -         | -          | -          | 
-| -         | -          | -          | 
-
-Detailed information regarding each circuit can be found in their respective files:
-- [Piezoelectric Actuation Driver](driver.md)
-- [Relaxation Oscillator](oscillator.md)
-- [Current Reference](reference.md)
-- [Power-on-Reset](supervisory.md)
-- [Startup](startup.md)
-- [ESD Protection](esd.md)
-- [Decoder](decoder.md)
-- [Computation](cmdchker.md)
 
 ## Table of contents
 ### 1. [↪](#1-background-of-this-tapeout-) Background of this Tapeout
@@ -55,6 +33,10 @@ This tapeout supports the [Open Source Mobile Microrobotics Framework SuRF 🏄�
 <br> 
 
 With SuRF 🏄‍♀️, the goal is to bring microrobotics closer to practical applications.
+
+
+
+
 
 # 2. Disclaimer [↩](#tt10---microrobot-circuits-documentation-)
 ### Quality
@@ -209,3 +191,22 @@ as of now only POR needed which I will just include into the "Startup Circuit"
     - active High: Push-pull, Internal, pull-up, pull-down, open-drain
 - area
 - power
+
+
+| Circuit Type      | Dogbot | TT10 Simulated |
+|----------------------|---------|----------------|
+| Energy Harvesting |Photovoltaic|Photovoltaic|
+| Actuation |Electrochemical|Piezoelectric|
+| Receiver |Optical |TBD| 
+
+
+
+| Circuit Type      | Dogbot | TT10 Hardware |
+|----------------------|---------|----------------|
+| Driver |?|TBD| 
+| Clock| Relaxation Oscillator |Relaxation Oscillator| 
+| Reference |PTAT|PTAT| 
+| Startup|Capacitor (?)|Diode | 
+| ESD Protection|?|TDB| 
+| Decoder|Manchester|Manchester| 
+| Computation|Command Checker|Command Checker| 
