@@ -1,4 +1,4 @@
-# Manchester Decoder [↩](documentation.md)
+# ESD Protection Circuits
 Different types of [insert] circuits and their aptitude regarding microrobotic applications are discussed in [SuRFs🏄‍♀️ teaching materials](https://github.com/jonoboderbonobo/surf/specs/electronics/types_of_circuits.md).
 
 ## Table of contents

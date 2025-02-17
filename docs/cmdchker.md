@@ -26,5 +26,7 @@
 
 # 8. Verification via Post-Layout Simulations [↩](#table-of-contents)
 
-# 9. Post-Tapeout Testing [↩](#table-of-contents)
+# 9. ⚠️Post-Tapeout Testing [↩](#table-of-contents)
+Testing can only be done after the estimated delivery date:
+<center>15.November 2025</center>
 

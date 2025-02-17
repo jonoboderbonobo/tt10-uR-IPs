@@ -1,4 +1,10 @@
-# Manchester Decoder [↩](documentation.md)
+# Reference [↩](documentation.md)
+First step is always to question wheather the circuit is needed or not. The next step
+I would rather not waste precious space on some reference. The current design with its low information density and low actuation frequency could probably work way below 1000 Hz, which might make it possible to average over multiple clock cycles and therefore work with a unstable clock. This would make a reference voltage obsolete. If this approach would actually be more area efficient is not clear to me.
+<br>
+
+Looking ahead, regarding bi-directional communication, sensors, cross-communication and higher actuation frequencies, a stable clock seems inevitable.
+
 Different types of [insert] circuits and their aptitude regarding microrobotic applications are discussed in [SuRFs🏄‍♀️ teaching materials](https://github.com/jonoboderbonobo/surf/specs/electronics/types_of_circuits.md).
 
 ## Table of contents

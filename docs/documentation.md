@@ -6,15 +6,47 @@ The image below shows one of the papers robots. This "Dogbot" is able to harvest
 
 ![Dogbot](img/Dogbot.png)
 
+This tapeout tries to replicate those circuits with an Open Source PDK.
+<br>
+
+
+| Circuit Type      | Dogbot | TT10 Simulated |
+|----------------------|---------|----------------|
+| Energy Harvesting |Photovoltaic|Photovoltaic|
+| Actuation |Electrochemical|Piezoelectric|
+| Receiver |Optical |TBD| 
+
+
+
+| Circuit Type      | Dogbot | TT10 Hardware |
+|----------------------|---------|----------------|
+| Driver |unknown|TBD| 
+| Clock| Relaxation Oscillator |Relaxation Oscillator| 
+| Reference |PTAT|PTAT| 
+| Startup|Capacitor|Diode | 
+| ESD Protection|unkown|TDB| 
+| Decoder|Manchester|Manchester| 
+| Computation|Command Checker|Command Checker| 
+| -         | -          | -          | 
+| -         | -          | -          | 
+
+Detailed information regarding each circuit can be found in their respective files:
+- [Piezoelectric Actuation Driver](driver.md)
+- [Relaxation Oscillator](oscillator.md)
+- [Current Reference](reference.md)
+- [Power-on-Reset](supervisory.md)
+- [Startup](startup.md)
+- [ESD Protection](esd.md)
+- [Decoder](decoder.md)
+- [Computation](cmdchker.md)
 
 ## Table of contents
 ### 1. [↪](#1-background-of-this-tapeout-) Background of this Tapeout
-### 2. [↪](#3-disclaimer-) Disclaimer
-### 3. [↪](#4-requirements-) Requirements
-### 4. [↪](#5-schematics-) Schematics
-### 5. [↪](#6-layouts-) Layouts
-### 6. [↪](#7-verification-) Verification
-### 7. [↪](#8-testing-) Testing
+### 2. [↪](#2-disclaimer-) Disclaimer
+### 3. [↪](#3-requirements-) Requirements
+### 4. [↪](#4-design-choices) Design Choices
+### 5. [↪](#5-results-) Results
+
 
 
 
@@ -120,72 +152,12 @@ Two microrobots sort human cells scattered on a silicon wafer. This wafer is loc
 Depending on the previous discussed mission profile, we can now determine the requirements on each of the sub-circuits.
 <br>
 
-Detailed information regarding each circuit can be found in their respective files:
-- [Startup](startup.md)
-- [Bandgap Voltage Reference](bandgap.md)
-- [Relax Oscillator](oscillator.md)
-- [Driver](driver.md)
-- [Manchester Decoder](decoder.md)
-- [Command Checker](cmdchker.md)
-<br>
-
 General information on microrobot requirements regarding on-board electronics can be found [here](https://github.com/jonoboderbonobo/surf/specs/requirements_on_microrobots.md), but can be condensed to:
 
  - **ultra-low-power (ULP)**
  - **low-cost** 
 
-## Startup Requirements
-| Metric                  | Unit | Dogbot | Goal | TT10 |
-|----------------------|---------|----------------|------|------|
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-
-## BGR Requirements
-| Metric                  | Unit | Dogbot | Goal | TT10 |
-|----------------------|---------|----------------|------|------|
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-## Clock Requirements
-| Metric                  | Unit | Dogbot | Goal | TT10 |
-|----------------------|---------|----------------|------|------|
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-## Driver Requirements
-| Metric                  | Unit | Dogbot | Goal | TT10 |
-|----------------------|---------|----------------|------|------|
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-## Decoder Requirements
-| Metric                  | Unit | Dogbot | Goal | TT10 |
-|----------------------|---------|----------------|------|------|
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           |
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-| -         | -          | -          | -           | -           | 
-## Command Checker Requirements
+## Driver
 | Metric                  | Unit | Dogbot | Goal | TT10 |
 |----------------------|---------|----------------|------|------|
 | -         | -          | -          | -           | -           |
@@ -197,60 +169,23 @@ General information on microrobot requirements regarding on-board electronics ca
 | -         | -          | -          | -           | -           | 
 
 
-# 4. Schematics [↩](#tt10---microrobot-circuits-documentation-)
-Detailed information regarding each circuit can be found in their respective files:
-- [Startup](startup.md)
-- [Bandgap Voltage Reference](bandgap.md)
-- [Relax Oscillator](oscillator.md)
-- [Driver](driver.md)
-- [Manchester Decoder](decoder.md)
-- [Command Checker](cmdchker.md)
-<br>
 
-## Startup 
-## BGR 
-## Clock 
-## Driver 
-## Decoder 
-## Command Checker 
+Template
+| Metric                  | Unit | Dogbot | Goal | TT10 |
+|----------------------|---------|----------------|------|------|
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           |
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
+| -         | -          | -          | -           | -           | 
 
-# 5. Layouts [↩](#tt10---microrobot-circuits-documentation-)
-Detailed information regarding each circuit can be found in their respective files:
-- [Startup](startup.md)
-- [Bandgap Voltage Reference](bandgap.md)
-- [Relax Oscillator](oscillator.md)
-- [Driver](driver.md)
-- [Manchester Decoder](decoder.md)
-- [Command Checker](cmdchker.md)
-<br>
 
-## Startup 
-## BGR 
-## Clock 
-## Driver 
-## Decoder 
-## Command Checker 
+# 4. Design Choices [↩](#tt10---microrobot-circuits-documentation-)
 
-# 6. Verification [↩](#tt10---microrobot-circuits-documentation-)
-Detailed information regarding each circuit can be found in their respective files:
-- [Startup](startup.md)
-- [Bandgap Voltage Reference](bandgap.md)
-- [Relax Oscillator](oscillator.md)
-- [Driver](driver.md)
-- [Manchester Decoder](decoder.md)
-- [Command Checker](cmdchker.md)
-<br>
 
-## Startup 
-## BGR 
-## Clock 
-## Driver 
-## Decoder 
-## Command Checker 
-
-# 7. ⚠️Testing⚠️ [↩](#tt10---microrobot-circuits-documentation-)
-Testing can only be done after the estimated delivery date:
-<center>15.November 2025</center>
+# 5. Results [↩](#tt10---microrobot-circuits-documentation-)
 
 
 # References
@@ -259,3 +194,18 @@ Testing can only be done after the estimated delivery date:
 
 <a id="2">[2]</a> <br>
 [M. Z. Miskin et al., “Electronically integrated, mass-manufactured, microscopic robots,” Nature, vol. 584, no. 7822, pp. 557–561, Aug. 2020, doi: 10.1038/s41586-020-2626-9.](https://www.nature.com/articles/s41586-020-2626-9)
+
+
+
+as of now only POR needed which I will just include into the "Startup Circuit"
+
+- Trip point
+    - min
+    - tpyical
+    - max
+- min reset timeout (ms)
+- reset output stage
+    - active Low: Push-pull, Internal, pull-up, pull-down, open-drain
+    - active High: Push-pull, Internal, pull-up, pull-down, open-drain
+- area
+- power

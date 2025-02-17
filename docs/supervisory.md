@@ -1,4 +1,8 @@
-# Manchester Decoder [↩](documentation.md)
+# Supervisory Circuit [↩](documentation.md)
+- Supervisory Circuits (e.g POR) [[1]](#1)
+- Startup circuits [[]]
+- ESD protection circuits
+
 Different types of [insert] circuits and their aptitude regarding microrobotic applications are discussed in [SuRFs🏄‍♀️ teaching materials](https://github.com/jonoboderbonobo/surf/specs/electronics/types_of_circuits.md).
 
 ## Table of contents
@@ -39,3 +43,8 @@ Testing can only be done after the estimated delivery date:
 
 # References
 <a id="1">[1]</a> <br>
+[“Understanding and Using Supervisory Circuits.” Microchip Technology Incorporated, 2022. [Online].](https://ww1.microchip.com/downloads/en/AppNotes/00686a.pdf)
+<br>
+
+<a id="1">[2]</a> <br>
+[Y.-T. Wang, C. Zhao, R. Geiger, D. Chen, and S.-C. Huang, “Performance verification of start-up circuits in reference generators,” in 2012 IEEE 55th International Midwest Symposium on Circuits and Systems (MWSCAS), Boise, ID, USA: IEEE, Aug. 2012, pp. 518–521. doi: 10.1109/MWSCAS.2012.6292071.](https://ieeexplore.ieee.org/document/6292071)

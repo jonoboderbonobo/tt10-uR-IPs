@@ -13,17 +13,17 @@ N 300 -380 440 -380 {lab=#net1}
 N 260 -300 330 -300 {lab=#net1}
 N 330 -380 330 -300 {lab=#net1}
 N 260 -510 260 -410 {lab=#net4}
-N 480 -510 480 -410 {lab=#net5}
-N 300 -540 440 -540 {lab=#net5}
+N 480 -510 480 -410 {lab=Iptat}
+N 300 -540 440 -540 {lab=Iptat}
 N 260 -610 260 -570 {lab=Vdd}
 N 480 -610 480 -570 {lab=Vdd}
-N 400 -540 400 -480 {lab=#net5}
-N 400 -480 480 -480 {lab=#net5}
-N 440 -540 440 -530 {lab=#net5}
-N 440 -530 600 -530 {lab=#net5}
+N 400 -540 400 -480 {lab=Iptat}
+N 400 -480 480 -480 {lab=Iptat}
+N 440 -540 440 -530 {lab=Iptat}
+N 440 -530 600 -530 {lab=Iptat}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 460 -540 0 0 {name=M10
 L=0.35
-W=1
+W=4
 nf=1 mult=1
 model=pfet_01v8_lvt
 spiceprefix=X
@@ -60,7 +60,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 460 -380 0 0 {name=M3
 L=0.15
-W=1
+W=4
 nf=1 mult=1
 model=nfet_01v8_lvt
 spiceprefix=X
