@@ -1,0 +1,90 @@
+** sch_path: /foss/designs/tt10-uR-IPs/xschem/osc_tb.sch
+**.subckt osc_tb
+VIN1 net3 0 1.8 pulse 0 1.8 1m 1n 1n 39.999m 80m ac 1 0
+XM1 VCC Vin1 Vineff 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+VVSS net4 0 0
+R2 VSS net4 30 m=1
+C6 VSS 0 100p m=1
+VVCC1 net5 0 'VCC'
+R10 VCC net5 30 m=1
+C11 VCC 0 100p m=1
+R3 Vin1 net3 30 m=1
+C1 Vin1 0 5f m=1
+XC2 net1 0 sky130_fd_pr__cap_mim_m3_1 W=1 L=1 MF=1 m=1
+XM3 net2 net2 net1 net1 sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Vout net2 net2 net2 sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x1 Vineff net1 Vout 0 schm_trig
+**** begin user architecture code
+
+
+
+.temp 30
+*.param IB=1n
+.param VCC = 1.8
+
+.option savecurrents
+.save all @m1[gm]
+.control
+  save all alli
+  op
+  let power=-v(vcc) * i(vvcc)
+  settype power power
+  write template_adv_tb.raw
+  set appendwrite
+
+  *dc vin1 0 1.8 0.001
+  *write template_adv_tb.raw
+
+  tran 1u 2m
+  *tran 0.01n 15n
+  write template_adv_tb.raw
+
+  *ac dec 10 1 1G
+  *remzerovec
+  *write template_adv_tb.raw
+
+
+
+  quit 0
+
+
+
+
+.endc
+
+
+
+
+** opencircuitdesign pdks install
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  schm_trig.sym # of pins=4
+** sym_path: /foss/designs/tt10-uR-IPs/xschem/schm_trig.sym
+** sch_path: /foss/designs/tt10-uR-IPs/xschem/schm_trig.sch
+.subckt schm_trig Vdd Vin Vout Vss
+*.ipin Vdd
+*.ipin Vss
+*.ipin Vin
+*.opin Vout
+XM10 net1 Vin Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Vout Vin net1 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Vss Vout net1 Vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 Vout Vin net2 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net2 Vin Vss Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Vdd Vout net2 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end

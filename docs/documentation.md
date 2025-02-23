@@ -1,15 +1,5 @@
 #  TT10 - Microrobot Circuits Documentation [↩](../README.md)
 
-Detailed information regarding each circuit can be found in their respective files:
-- [Piezoelectric Actuation Driver](driver.md)
-- [Relaxation Oscillator](oscillator.md)
-- [Current Reference (PTAT)](reference.md)
-- [Power-on-Reset](supervisory.md)
-- [Startup](startup.md)
-- [ESD Protection](esd.md)
-- [Decoder](decoder.md)
-- [Computation](cmdchker.md)
-
 This Tapeout explores some basic low-power, low-cost circuits inspired by Michael F. Reynolds et. al. work Microscopic robots with onboard digital control (2022) [[1]](#1). 
 <br>
 
@@ -29,7 +19,7 @@ The image below shows one of the papers robots. This "Dogbot" is able to harvest
 
 
 # 1. Background of this Tapeout [↩](#tt10---microrobot-circuits-documentation-)
-This tapeout supports the [Open Source Mobile Microrobotics Framework SuRF 🏄‍♀️](https://github.com/jonoboderbonobo/surf/), providing silicon-proven, open source circuit blocks for on-board actuation. These low-power, low-cost designs help researchers and engineers test a wide range of actuation, communication, and energy-harvesting methods in real-life conditions. 
+This tapeout is part of [Piezobot-V1](https://github.com/jonoboderbonobo/piezobot-v1/blob/main/README.md) which supports the [Open Source Mobile Microrobotics Framework SuRF 🏄‍♀️](https://github.com/jonoboderbonobo/surf/), providing silicon-proven, open source circuit blocks for on-board actuation. These low-power, low-cost designs help researchers and engineers test a wide range of actuation, communication, and energy-harvesting methods in real-life conditions. 
 <br> 
 
 With SuRF 🏄‍♀️, the goal is to bring microrobotics closer to practical applications.
@@ -137,7 +127,16 @@ Depending on the previous discussed mission profile, we can now determine the re
 General information on microrobot requirements regarding on-board electronics can be found [here](https://github.com/jonoboderbonobo/surf/specs/requirements_on_microrobots.md), but can be condensed to:
 
  - **ultra-low-power (ULP)**
- - **low-cost** 
+ - **low-cost**
+
+### Chain of thought: <br>
+- The Actuator needs a specific voltage, current and waveform which the output of the logic mosfets are likely not able to deliver. 
+- We therefore need some dedicated circuit for this. A driver. 
+- If we dont want the driver to execute only one cycle of motion for every incomming command, we need some internal repeating signal to regulary drive the actuator. Lets call it clock.
+- If we want the robot to operate on different actuation frequencies, either to change its speed or its grip, we need to be able to generate different clock frequencies. (e.g frequency divider used in Dogbot)
+- If we want the movement of the robot to be precise, a precise clock is desirable. 
+- For a precise clock some kind of stable referene signal is needed. 
+- Because the temperature for this szenario is pretty constant (as well as szenarios inside the human body) and assuming heat-generation (1uW --> 200W/m^2) is not a problem, we can get away with not using a temperature independant reference to save some area. Dogbot for example only uses PTAT instead of combining PTAT and CTAT, which is usually done to compensate for temperature fluctuations.   
 
 ## Driver
 | Metric                  | Unit | Dogbot | Goal | TT10 |
@@ -165,7 +164,11 @@ Template
 
 
 # 4. Design Choices [↩](#tt10---microrobot-circuits-documentation-)
+## Driver
 
+## Oscillator
+
+## Reference
 
 # 5. Results [↩](#tt10---microrobot-circuits-documentation-)
 
