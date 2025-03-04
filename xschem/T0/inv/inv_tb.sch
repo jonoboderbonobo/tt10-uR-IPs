@@ -24,40 +24,25 @@ K {}
 V {}
 S {}
 E {}
-L 4 620 -990 620 -930 {}
-L 4 620 -930 630 -940 {}
-L 4 610 -940 620 -930 {}
-L 4 620 -870 620 -810 {}
-L 4 620 -810 630 -820 {}
-L 4 610 -820 620 -810 {}
-L 4 620 -760 620 -700 {}
-L 4 620 -700 630 -710 {}
-L 4 610 -710 620 -700 {}
-L 4 620 -630 620 -570 {}
-L 4 620 -570 630 -580 {}
-L 4 610 -580 620 -570 {}
-L 4 620 -510 620 -450 {}
-L 4 620 -450 630 -460 {}
-L 4 610 -460 620 -450 {}
-L 4 620 -390 620 -330 {}
-L 4 620 -330 630 -340 {}
-L 4 610 -340 620 -330 {}
-B 2 900 -1195 1460 -865 {flags=graph,unlocked
+B 2 580 -925 1140 -595 {flags=graph,unlocked
 
 sim_type=dc
-y1=-1.5e-16
-y2=1.5
+y1=3.9e-06
+y2=1.9
 divy=4
 subdivy=1
 x1=0
 x2=1.8
 divx=6
 subdivx=1
-node="\\"Diode1;V1\\""
+node="\\"Diode1;Vout\\""
 color=8
 dataset=-1
 autoload=1
-xrawfile=$netlist_dir/cmos_example_ngspice.raw}
+xrawfile=$netlist_dir/cmos_example_ngspice.raw
+
+hcursor1_y=1.6989121
+hcursor2_y=0.10032451}
 B 2 -560 -430 -423 -370 {flags=image
 alpha=0.6
 InvertOnExport=true
@@ -65,7 +50,7 @@ image_data=iVBORw0KGgoAAAANSUhEUgAAAPoAAAB3CAYAAAAqwl07AAAABmJLR0QA/wD/AP+gvaeTA
 T {tcleval([xschem raw info])} -520 70 0 0 0.4 0.4 {floater=true layer=16}
 T {Advanced Testbench} -550 -930 0 0 0.4 0.4 {}
 T {tcleval([xschem raw info])} 5220 -1390 0 0 0.4 0.4 {floater=true layer=16}
-T {DC Analysis} 900 -1235 0 0 0.6 0.6 { layer=6}
+T {DC Analysis} 580 -965 0 0 0.6 0.6 { layer=6}
 T {Loaded Raw files:} 5220 -1440 0 0 0.6 0.6 {}
 T { if the mouse is outside the graph the usual Xschem functions will be available to operate on schematics:
 
@@ -94,75 +79,27 @@ T { if the mouse is outside the graph the usual Xschem functions will be availab
     Pressing the right mouse button to the left of the Y axis and dragging some distance in the Y direction will zoom in the waveforms to that Y range.
 
 } 3505 -2230 0 0 0.4 0.4 { layer=15}
-T {Supply Voltage: @spice_get_voltage(vdd)\\V} 400 -1340 0 0 0.4 0.4 {floater=true layer=3}
+T {Supply Voltage: @spice_get_voltage(vdd)\\V} 670 -1060 0 0 0.4 0.4 {floater=true layer=3}
 T {			Circuit Information
-__________________________________________________} 310 -1400 0 0 0.4 0.4 { layer=3
+__________________________________________________} 580 -1120 0 0 0.4 0.4 { layer=3
 }
 N -260 -420 -230 -420 {
 lab=VSS}
 N -260 -590 -230 -590 {
 lab=VDD}
 N -260 -760 -230 -760 {
-lab=Vin1}
-N -230 -760 -180 -760 {lab=Vin1}
+lab=Vin}
+N -230 -760 -180 -760 {lab=Vin}
 N -230 -590 -180 -590 {lab=VDD}
 N -230 -420 -200 -420 {lab=VSS}
-N 510 -350 520 -350 {lab=V6}
-N 510 -350 510 -320 {lab=V6}
-N 510 -320 520 -320 {lab=V6}
-N 520 -320 520 -280 {lab=V6}
-N 520 -440 520 -380 {lab=V5}
-N 560 -400 560 -350 {lab=V5}
-N 520 -400 560 -400 {lab=V5}
-N 510 -470 520 -470 {lab=V5}
-N 510 -470 510 -440 {lab=V5}
-N 510 -440 520 -440 {lab=V5}
-N 520 -560 520 -500 {lab=V4}
-N 560 -520 560 -470 {lab=V4}
-N 520 -520 560 -520 {lab=V4}
-N 510 -590 520 -590 {lab=V4}
-N 510 -590 510 -560 {lab=V4}
-N 510 -560 520 -560 {lab=V4}
-N 560 -640 560 -590 {lab=V3}
-N 520 -640 560 -640 {lab=V3}
-N 480 -730 480 -700 {lab=V3}
-N 520 -730 530 -730 {lab=V2}
-N 530 -760 530 -730 {lab=V2}
-N 520 -760 530 -760 {lab=V2}
-N 520 -810 520 -760 {lab=V2}
-N 480 -700 520 -700 {lab=V3}
-N 480 -840 480 -810 {lab=V2}
-N 520 -840 530 -840 {lab=V1}
-N 530 -870 530 -840 {lab=V1}
-N 520 -870 530 -870 {lab=V1}
-N 520 -920 520 -870 {lab=V1}
-N 480 -810 520 -810 {lab=V2}
-N 480 -950 480 -920 {lab=V1}
-N 520 -950 530 -950 {lab=V0}
-N 530 -980 530 -950 {lab=V0}
-N 520 -980 530 -980 {lab=V0}
-N 520 -1030 520 -980 {lab=V0}
-N 480 -920 520 -920 {lab=V1}
-N 520 -1050 520 -1030 {lab=V0}
-N 520 -640 520 -620 {lab=V3}
-N 520 -780 710 -780 {lab=V2}
-N 520 -890 710 -890 {lab=V1}
-N 520 -670 710 -670 {lab=V3}
-N 520 -540 710 -540 {lab=V4}
-N 520 -420 710 -420 {lab=V5}
-N 520 -700 520 -650 {lab=V3}
-N 520 -650 520 -640 {lab=V3}
-N 520 -280 520 -260 {lab=V6}
-N 520 -1140 520 -1110 {lab=VA}
-N 520 -1020 710 -1020 {lab=V0}
-N 520 -1210 520 -1200 {lab=Vin1}
-N 520 -1120 710 -1120 {lab=VA}
-N 520 -90 520 -40 {lab=0}
-N 520 -110 520 -90 {lab=0}
-N 520 -200 520 -170 {lab=V7}
-N 520 -180 710 -180 {lab=V7}
-N 520 -290 710 -290 {lab=V6}
-C {lab_pin.sym} 520 -1210 2 1 {name=p1 lab=Vin1}
+N 260 -780 260 -750 {lab=#net1}
+N 260 -690 260 -670 {lab=#net2}
+N 260 -670 260 -660 {lab=#net2}
+N 160 -720 200 -720 {lab=Vin}
+N 320 -720 400 -720 {lab=Vout}
+N 260 -880 260 -840 {lab=VDD}
+N 260 -600 260 -560 {lab=VSS}
+C {lab_pin.sym} 160 -720 2 1 {name=p1 lab=Vin}
 C {lab_pin.sym} -260 -640 0 0 {name=p10 lab=0}
 C {vsource.sym} -260 -670 0 0 {name=VIN1
 value="1.8 pulse 0 1.8 1m 1n 1n 39.999m 80m ac 1 0" 
@@ -255,12 +192,6 @@ tclcommand \{
     # Just press "A" or "B" inside the graph
 \}
 }
-C {ngspice_get_expr.sym} 680 -1320 2 0 {name=r6 node="[expr \{[ngspice::get_voltage v(vin1)] - [ngspice::get_voltage v(vout)]\}]"
-descr="Voltage drop at Resistor ="}
-C {ngspice_get_expr.sym} 720 -1320 2 0 {name=r7 node="[to_eng [expr \{([ngspice::get_voltage v(v1)] - [ngspice::get_voltage v(v2)])/ [ngspice::get_voltage i(vi_s-m1)]\}]]"
-descr="Drain-Source Channel Resistance M1 ="}
-C {ngspice_get_expr.sym} 750 -1320 2 0 {name=r8 node="[to_eng [ngspice::get_voltage i(vi_s-m1)]]"
-descr="Source Current M1 ="}
 C {devices/vsource.sym} -260 -330 0 0 {name=VVSS value=0}
 C {devices/lab_pin.sym} -260 -420 0 0 {name=p12 lab=VSS}
 C {devices/lab_pin.sym} -260 -300 0 0 {name=p13 lab=0}
@@ -269,7 +200,7 @@ value=30
 footprint=1206
 device=resistor
 m=1}
-C {devices/parax_cap.sym} -200 -410 0 0 {name=C6 gnd=0 value=100p m=1}
+C {devices/parax_cap.sym} -200 -410 0 0 {name=C6 gnd=0 value=5f m=1}
 C {devices/vsource.sym} -260 -500 0 0 {name=VVCC1 value='VCC'}
 C {devices/lab_pin.sym} -260 -590 0 0 {name=p32 lab=VDD}
 C {devices/lab_pin.sym} -260 -470 0 0 {name=p33 lab=0}
@@ -278,137 +209,55 @@ value=30
 footprint=1206
 device=resistor
 m=1}
-C {devices/parax_cap.sym} -180 -580 0 0 {name=C11 gnd=0 value=100p m=1}
+C {devices/parax_cap.sym} -180 -580 0 0 {name=C11 gnd=0 value=5f m=1}
 C {devices/res.sym} -260 -730 0 0 {name=R9
 value=30
 footprint=1206
 device=resistor
 m=1}
 C {devices/parax_cap.sym} -180 -750 0 0 {name=C2 gnd=0 value=5f m=1}
-C {lab_pin.sym} -260 -760 2 1 {name=p19 lab=Vin1}
-C {launcher.sym} 130 -1000 0 0 {name=h1
+C {lab_pin.sym} -260 -760 2 1 {name=p19 lab=Vin}
+C {launcher.sym} 170 -970 0 0 {name=h1
 descr="Live annotate" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {launcher.sym} 55 -1040 0 0 {name=h2 
+C {launcher.sym} 95 -1010 0 0 {name=h2 
 descr="Load DC" 
 tclcommand="
 xschem raw_read $netlist_dir/template_adv_tb.raw dc
 "
 }
-C {launcher.sym} -260 -1030 0 0 {name=h3 
+C {launcher.sym} -360 -1030 0 0 {name=h3 
 descr="Load AC" 
 tclcommand="
 xschem raw_read $netlist_dir/template_adv_tb.raw ac
 "
 }
-C {launcher.sym} -235 -990 0 0 {name=h4
+C {launcher.sym} -335 -990 0 0 {name=h4
 descr="Live annotate" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {launcher.sym} -290 -1152.5 0 0 {name=h5 
+C {launcher.sym} -390 -1152.5 0 0 {name=h5 
 descr="Load TRAN" 
 tclcommand="
 xschem raw_read $netlist_dir/template_adv_tb.raw tran
 "
 }
-C {launcher.sym} -215 -1122.5 0 0 {name=h9
+C {launcher.sym} -315 -1122.5 0 0 {name=h9
 descr="Live annotate" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {ngspice_get_expr.sym} 630 -980 2 1 {name=r1 node="[to_eng [expr \{([ngspice::get_voltage v(vin1)] - [ngspice::get_voltage v(v1)])\}]]V"
-descr="Vf_D1="}
-C {sky130_fd_pr/nfet_01v8.sym} 540 -350 0 1 {name=M1
-L=1
-W=1
-nf=1 mult=1
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8.sym} 500 -730 0 0 {name=M3
-L=0.20
-W=1
-nf=1 mult=1
-model=pfet_01v8
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 520 -40 0 0 {name=p8 lab=0}
-C {sky130_fd_pr/nfet_01v8.sym} 540 -470 0 1 {name=M4
-L=1
-W=1 
-nf=1 mult=1
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 540 -590 0 1 {name=M5
-L=1
-W=1 
-nf=1 mult=1
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8.sym} 500 -840 0 0 {name=M6
-L=0.20
-W=1
-nf=1 mult=1
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8.sym} 500 -950 0 0 {name=M7
-L=0.20
-W=1
-nf=1 mult=1
-model=pfet_01v8
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 710 -780 2 0 {name=p2 lab=V2}
-C {devices/lab_pin.sym} 710 -890 2 0 {name=p3 lab=V1}
-C {devices/lab_pin.sym} 710 -670 0 1 {name=p5 lab=V3}
-C {devices/lab_pin.sym} 710 -540 0 1 {name=p6 lab=V4}
-C {devices/lab_pin.sym} 710 -420 0 1 {name=p9 lab=V5}
-C {ngspice_get_expr.sym} 630 -860 2 1 {name=r24 node="[to_eng [expr \{([ngspice::get_voltage v(v1)] - [ngspice::get_voltage v(v2)])\}]]V"
-descr="Vf_D2="}
-C {ngspice_get_expr.sym} 630 -750 2 1 {name=r25 node="[to_eng [expr \{([ngspice::get_voltage v(v2)] - [ngspice::get_voltage v(v3)])\}]]V"
-descr="Vf_D3="}
-C {ngspice_get_expr.sym} 630 -620 2 1 {name=r26 node="[to_eng [expr \{([ngspice::get_voltage v(v3)] - [ngspice::get_voltage v(v4)])\}]]V"
-descr="Vf_D4="}
-C {ngspice_get_expr.sym} 630 -500 2 1 {name=r27 node="[to_eng [expr \{([ngspice::get_voltage v(v4)] - [ngspice::get_voltage v(v5)])\}]]V"
-descr="Vf_D5="}
-C {ngspice_get_expr.sym} 700 -980 2 1 {name=r2 node="[to_eng [expr \{(([ngspice::get_voltage v(vin1)] - [ngspice::get_voltage v(v1)])/ [ngspice::get_voltage v(vin1)])*100\}]]% "
-descr="Vf_D1="}
-C {ngspice_get_expr.sym} 700 -860 2 1 {name=r3 node="[to_eng [expr \{(([ngspice::get_voltage v(v1)] - [ngspice::get_voltage v(v2)])/ [ngspice::get_voltage v(vin1)])*100\}]]% "
-descr="Vf_D2="}
-C {ngspice_get_expr.sym} 700 -750 2 1 {name=r10 node="[to_eng [expr \{(([ngspice::get_voltage v(v2)] - [ngspice::get_voltage v(v3)])/ [ngspice::get_voltage v(vin1)])*100\}]]% "
-descr="Vf_D3="}
-C {ngspice_get_expr.sym} 700 -620 2 1 {name=r11 node="[to_eng [expr \{(([ngspice::get_voltage v(v3)] - [ngspice::get_voltage v(v4)])/ [ngspice::get_voltage v(vin1)])*100\}]]% "
-descr="Vf_D4="}
-C {ngspice_get_expr.sym} 700 -500 2 1 {name=r12 node="[to_eng [expr \{(([ngspice::get_voltage v(v4)] - [ngspice::get_voltage v(v5)])/ [ngspice::get_voltage v(vin1)])*100\}]]% "
-descr="Vf_D5="}
-C {res.sym} 520 -1080 0 0 {name=R14
-value=1k
+C {T0/inv/inv.sym} 50 -510 0 0 {name=x4}
+C {devices/lab_pin.sym} 260 -880 0 0 {name=p2 lab=VDD}
+C {devices/lab_pin.sym} 260 -560 0 0 {name=p3 lab=VSS}
+C {lab_pin.sym} 400 -720 0 1 {name=p4 lab=Vout}
+C {res.sym} 260 -810 0 0 {name=R1
+value=1000k
 footprint=1206
 device=resistor
 m=1}
-C {ngspice_get_expr.sym} 630 -380 2 1 {name=r17 node="[to_eng [expr \{([ngspice::get_voltage v(v5)] - [ngspice::get_voltage v(v6)])\}]]V"
-descr="Vf_D6="}
-C {ngspice_get_expr.sym} 700 -380 2 1 {name=r13 node="[to_eng [expr \{(([ngspice::get_voltage v(v5)] - [ngspice::get_voltage v(v6)])/ [ngspice::get_voltage v(vin1)])*100\}]]% "
-descr="Vf_D6="}
-C {devices/lab_pin.sym} 710 -1020 2 0 {name=p7 lab=V0}
-C {res.sym} 520 -1170 0 0 {name=R18
-value=1k
+C {res.sym} 260 -630 0 0 {name=R2
+value=1000k
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 710 -1120 2 0 {name=p4 lab=VA}
-C {res.sym} 520 -140 0 0 {name=R19
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 520 -230 0 0 {name=R20
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {devices/lab_pin.sym} 710 -180 2 0 {name=p14 lab=V7}
-C {devices/lab_pin.sym} 710 -290 2 0 {name=p11 lab=V6}

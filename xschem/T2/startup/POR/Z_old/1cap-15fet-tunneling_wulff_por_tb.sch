@@ -42,7 +42,7 @@ L 4 610 -460 620 -450 {}
 L 4 620 -390 620 -330 {}
 L 4 620 -330 630 -340 {}
 L 4 610 -340 620 -330 {}
-B 2 900 -1195 1460 -865 {flags=graph,unlocked
+B 2 1750 -1205 2310 -875 {flags=graph,unlocked
 
 sim_type=dc
 y1=-1.5e-16
@@ -65,7 +65,7 @@ image_data=iVBORw0KGgoAAAANSUhEUgAAAPoAAAB3CAYAAAAqwl07AAAABmJLR0QA/wD/AP+gvaeTA
 T {tcleval([xschem raw info])} -520 70 0 0 0.4 0.4 {floater=true layer=16}
 T {Advanced Testbench} -550 -930 0 0 0.4 0.4 {}
 T {tcleval([xschem raw info])} 5220 -1390 0 0 0.4 0.4 {floater=true layer=16}
-T {DC Analysis} 900 -1235 0 0 0.6 0.6 { layer=6}
+T {DC Analysis} 1750 -1245 0 0 0.6 0.6 { layer=6}
 T {Loaded Raw files:} 5220 -1440 0 0 0.6 0.6 {}
 T { if the mouse is outside the graph the usual Xschem functions will be available to operate on schematics:
 
@@ -162,6 +162,9 @@ N 520 -110 520 -90 {lab=0}
 N 520 -200 520 -170 {lab=V7}
 N 520 -180 710 -180 {lab=V7}
 N 520 -290 710 -290 {lab=V6}
+N 1420 -660 1420 -640 {lab=0}
+N 1420 -760 1420 -740 {lab=Vin1}
+N 1510 -700 1600 -700 {lab=Vpor}
 C {lab_pin.sym} 520 -1210 2 1 {name=p1 lab=Vin1}
 C {lab_pin.sym} -260 -640 0 0 {name=p10 lab=0}
 C {vsource.sym} -260 -670 0 0 {name=VIN1
@@ -412,3 +415,7 @@ device=resistor
 m=1}
 C {devices/lab_pin.sym} 710 -180 2 0 {name=p14 lab=V7}
 C {devices/lab_pin.sym} 710 -290 2 0 {name=p11 lab=V6}
+C {T1/schmitt_trigger/schm_trig.sym} 1240 -500 0 0 {name=x1}
+C {lab_pin.sym} 1420 -760 0 1 {name=p15 lab=Vin1}
+C {devices/lab_pin.sym} 1420 -640 2 0 {name=p16 lab=0}
+C {lab_pin.sym} 1600 -700 0 1 {name=p17 lab=Vpor}

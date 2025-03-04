@@ -31,8 +31,8 @@ y1=-1.7e-20
 y2=0.00052
 divy=4
 subdivy=1
-x1=1
-x2=1
+x1=0.4754433
+x2=0.49975233
 divx=6
 subdivx=1
 
@@ -57,8 +57,8 @@ image_data=iVBORw0KGgoAAAANSUhEUgAAAPoAAAB3CAYAAAAqwl07AAAABmJLR0QA/wD/AP+gvaeTA
 B 2 747.5 -937.5 1377.5 -657.5 {flags=graph,unlocked
 
 sim_type=tran
-y1=1.5e-06
-y2=2
+y1=4.9e-07
+y2=0.67
 divy=5
 subdivy=1
 x1=0
@@ -166,8 +166,8 @@ node=vin1}
 B 2 745 -290 1375 -10 {flags=graph,unlocked
 
 sim_type=tran
-y1=0.002
-y2=0.012
+y1=0
+y2=0.01
 divy=5
 subdivy=1
 x1=-0.09
@@ -203,8 +203,8 @@ autoload=1
 B 2 750 -640 1380 -360 {flags=graph,unlocked
 
 sim_type=tran
-y1=-8.5e-10
-y2=0.00056
+y1=-4.4e-10
+y2=4.9e-06
 divy=5
 subdivy=1
 
@@ -249,8 +249,8 @@ y1=0
 y2=0.00053
 divy=4
 subdivy=1
-x1=1
-x2=1
+x1=0.4754433
+x2=0.49975233
 divx=6
 subdivx=1
 
@@ -298,8 +298,8 @@ xrawfile=$netlist_dir/cmos_example_ngspice.raw
 rawfile=$netlist_dir/nmos_tb.raw
 
 
-x1=1
-x2=1
+x1=0.4754433
+x2=0.49975233
 sweep=v(vds)
 color=4
 node=v(vgs)}
@@ -310,8 +310,8 @@ y1=0.56
 y2=0.64
 divy=4
 subdivy=1
-x1=1
-x2=1
+x1=0.4754433
+x2=0.49975233
 divx=6
 subdivx=1
 
@@ -338,8 +338,8 @@ y1=0
 y2=0.00053
 divy=4
 subdivy=1
-x1=-8.4347532e-10
-x2=0.00055052364
+x1=-4.3998283e-10
+x2=4.8589364e-06
 divx=6
 subdivx=1
 
@@ -518,15 +518,29 @@ T {Transconductance} 2177.5 -462.5 0 0 0.6 0.6 { layer=6}
 T {Select Voltage} 2207.5 -1242.5 0 0 0.6 0.6 { layer=6}
 T {Threshold Voltage} 2180 -87.5 0 0 0.6 0.6 { layer=6}
 T {Output} 2262.5 302.5 0 0 0.6 0.6 { layer=6}
-N -190 -660 -190 -630 {lab=Vds}
-N -190 -660 -130 -660 {lab=Vds}
-N 360 -930 360 -910 {lab=Vds}
-N 360 -690 360 -640 {lab=0}
-N 360 -850 360 -750 {lab=#net1}
-N 200 -720 320 -720 {lab=Vgs}
-N 370 -720 370 -690 {lab=0}
-N 360 -690 370 -690 {lab=0}
-N 360 -720 370 -720 {lab=0}
+N -260 -680 -260 -650 {lab=Hvds}
+N -260 -680 -200 -680 {lab=Hvds}
+N 550 -655 550 -605 {lab=0}
+N 560 -685 560 -655 {lab=0}
+N 550 -655 560 -655 {lab=0}
+N 550 -685 560 -685 {lab=0}
+N -260 -840 -260 -810 {lab=Hvgs}
+N -260 -840 -200 -840 {lab=Hvgs}
+N 550 -765 550 -715 {lab=Vds}
+N 240 -685 290 -685 {lab=#net1}
+N 430 -625 430 -605 {lab=0}
+N 160 -685 180 -685 {lab=Hvgs}
+N 430 -685 510 -685 {lab=Vgs}
+N 350 -685 430 -685 {lab=Vgs}
+N 500 -715 500 -685 {lab=Vgs}
+N 240 -920 290 -920 {lab=#net2}
+N 430 -860 430 -840 {lab=0}
+N 160 -920 180 -920 {lab=Hvds}
+N 430 -920 510 -920 {lab=#net3}
+N 350 -920 430 -920 {lab=#net3}
+N 510 -920 550 -920 {lab=#net3}
+N 550 -920 550 -825 {lab=#net3}
+N 500 -730 500 -715 {lab=Vgs}
 C {launcher.sym} 5285 -1480 0 0 {name=h6
 descr="View raw file"
 tclcommand="textwindow $netlist_dir/template_adv_tb.raw"}
@@ -656,7 +670,7 @@ tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
 C {ngspice_get_expr.sym} 330 -1130 2 0 {name=r7 node="[to_eng [expr \{([ngspice::get_voltage v(v1)] - [ngspice::get_voltage v(v2)])/ [ngspice::get_voltage i(vi_s-m1)]\}]]"
 descr="Drain-Source Channel Resistance M1 ="}
-C {ngspice_get_expr.sym} 450 -880 2 0 {name=r8 node="[to_eng [ngspice::get_voltage i(vi_d)]]"
+C {ngspice_get_expr.sym} 500 -1140 2 0 {name=r8 node="[to_eng [ngspice::get_voltage i(vi_d)]]"
 descr="vi_d="}
 C {launcher.sym} -995 -950 0 0 {name=h1 
 descr="Load DC" 
@@ -670,26 +684,17 @@ tclcommand="
 xschem raw_read $netlist_dir/nmos_tb.raw ac
 "
 }
-C {devices/lab_pin.sym} 360 -930 0 0 {name=p3 lab=Vds}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 340 -720 0 0 {name=M1
-L=0.15
-W=1
-nf=1 mult=1
-model=nfet_01v8_lvt
-spiceprefix=X
-}
-C {ammeter.sym} 360 -880 0 1 {name=vi_d}
-C {devices/lab_pin.sym} -130 -660 2 0 {name=p1 lab=Vds}
-C {devices/vsource.sym} -190 -600 0 0 {name=v_dev_vds value=1}
-C {devices/lab_pin.sym} -190 -570 0 0 {name=p4 lab=0}
-C {devices/lab_pin.sym} 200 -720 0 0 {name=p7 lab=Vgs}
+C {ammeter.sym} 550 -795 0 1 {name=vi_d}
+C {devices/vsource.sym} -260 -620 0 0 {name=v_dev_vds value=1}
+C {devices/lab_pin.sym} -260 -590 0 0 {name=p4 lab=0}
+C {devices/lab_pin.sym} 500 -730 2 0 {name=p7 lab=Vgs}
 C {ngspice_get_expr.sym} 290 -1130 2 0 {name=r6 node="[expr \{[ngspice::get_voltage v(vds)] - [ngspice::get_voltage v(vds)]]\}]"
 descr="Voltage lelele ="}
 C {ngspice_get_value.sym} 760 -1410 0 1 {name=r2 node= @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
 descr="gm="}
 C {ngspice_get_expr.sym} 230 -1130 2 0 {name=r1 node="[ngspice::get_node @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]]"
 descr="Gm ="}
-C {devices/lab_pin.sym} 360 -640 0 0 {name=p10 lab=0}
+C {devices/lab_pin.sym} 550 -605 0 0 {name=p10 lab=0}
 C {ngspice_get_value.sym} 180 -1110 0 1 {name=r3 node=@r6
 descr="test="}
 C {ngspice_get_value.sym} 350 -1130 0 0 {name=r4 node=xxx
@@ -765,7 +770,50 @@ C {ngspice_get_value.sym} 1200 -1370 0 1 {name=r23 node=v(@m.xm1.msky130_fd_pr__
 descr="width="
 
 }
-C {devices/lab_pin.sym} -150 -840 2 0 {name=p6 lab=Vgs}
-C {devices/lab_pin.sym} -150 -780 0 0 {name=p8 lab=0}
-C {vsource_arith.sym} -150 -810 0 0 {name=E1 
+C {devices/lab_pin.sym} -200 -840 2 0 {name=p6 lab=Hvgs}
+C {devices/lab_pin.sym} -260 -750 0 0 {name=p8 lab=0}
+C {vsource_arith.sym} -260 -780 0 0 {name=E1 
 VOL="'1+sin(time*2*pi*1e6)'"}
+C {res.sym} 210 -685 1 0 {name=R27
+value=10k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 320 -685 1 0 {name=R28
+value=10k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 430 -655 0 0 {name=R29
+value=10k
+footprint=1206
+device=resistor
+m=1}
+C {devices/lab_pin.sym} 430 -605 2 0 {name=p5 lab=0}
+C {devices/lab_pin.sym} 550 -745 2 0 {name=p9 lab=Vds}
+C {devices/lab_pin.sym} -200 -680 2 0 {name=p1 lab=Hvds}
+C {devices/lab_pin.sym} 160 -685 0 0 {name=p11 lab=Hvgs}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 530 -685 0 0 {name=M2
+L=0.15
+W=1
+nf=1 mult=1
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {res.sym} 210 -920 1 0 {name=R24
+value=10k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 320 -920 1 0 {name=R25
+value=10k
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 430 -890 0 0 {name=R26
+value=10k
+footprint=1206
+device=resistor
+m=1}
+C {devices/lab_pin.sym} 430 -840 2 0 {name=p3 lab=0}
+C {devices/lab_pin.sym} 160 -920 0 0 {name=p12 lab=Hvds}

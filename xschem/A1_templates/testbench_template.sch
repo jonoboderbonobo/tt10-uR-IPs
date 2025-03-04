@@ -106,8 +106,8 @@ y1=0
 y2=0.01
 
 subdivy=1
-x1=1.9572153e-09
-x2=1.0195722e-07
+x1=-3.0427849e-09
+x2=9.695722e-08
 divx=6
 subdivx=8
 
@@ -297,9 +297,9 @@ T { if the mouse is outside the graph the usual Xschem functions will be availab
     Pressing the right mouse button to the left of the Y axis and dragging some distance in the Y direction will zoom in the waveforms to that Y range.
 
 } 3505 -2230 0 0 0.4 0.4 { layer=15}
-T {Supply Voltage: @spice_get_voltage(vdd)\\V} 400 -1000 0 0 0.4 0.4 {floater=true layer=3}
+T {Supply Voltage: @spice_get_voltage(vdd)\\V} 390 -1100 0 0 0.4 0.4 {floater=true layer=3}
 T {			Circuit Information
-__________________________________________________} 310 -1060 0 0 0.4 0.4 { layer=3
+__________________________________________________} 300 -1160 0 0 0.4 0.4 { layer=3
 }
 T {For known waveforms} 2070 -1193.203221277284 0 1 0.6 0.6 { layer=3}
 T {For intesting waveforms} 2105 -1013.203221277284 0 1 0.6 0.6 { layer=3}
@@ -377,12 +377,6 @@ value="1.8 pulse 0 1.8 1m 1n 1n 39.999m 80m ac 1 0"
 C {launcher.sym} 5285 -1480 0 0 {name=h6
 descr="View raw file"
 tclcommand="textwindow $netlist_dir/template_adv_tb.raw"}
-C {launcher.sym} 1470 -970 0 0 {name=h7 
-descr="Load waveforms" 
-tclcommand="
-xschem raw_read $netlist_dir/template_adv_tb.raw tran
-"
-}
 C {launcher.sym} 2840 -1970 0 0 {name=h8
 descr="Graph Manual page"
 url="https://xschem.sourceforge.io/stefan/xschem_man/graphs.html"}
@@ -467,15 +461,11 @@ tclcommand \{
     # Just press "A" or "B" inside the graph
 \}
 }
-C {launcher.sym} 1475 -910 0 0 {name=h13
-descr="Live annotate" 
-tclcommand="set show_hidden_texts 1; xschem annotate_op"
-}
-C {ngspice_get_expr.sym} 580 -950 2 0 {name=r6 node="[expr \{[ngspice::get_voltage v(vin1)] - [ngspice::get_voltage v(vout)]\}]"
+C {ngspice_get_expr.sym} 570 -1050 2 0 {name=r6 node="[expr \{[ngspice::get_voltage v(vin1)] - [ngspice::get_voltage v(vout)]\}]"
 descr="Voltage drop at Resistor ="}
-C {ngspice_get_expr.sym} 580 -860 2 0 {name=r7 node="[to_eng [expr \{([ngspice::get_voltage v(v1)] - [ngspice::get_voltage v(v2)])/ [ngspice::get_voltage i(vi_s-m1)]\}]]"
+C {ngspice_get_expr.sym} 570 -960 2 0 {name=r7 node="[to_eng [expr \{([ngspice::get_voltage v(v1)] - [ngspice::get_voltage v(v2)])/ [ngspice::get_voltage i(vi_s-m1)]\}]]"
 descr="Drain-Source Channel Resistance M1 ="}
-C {ngspice_get_expr.sym} 580 -910 2 0 {name=r8 node="[to_eng [ngspice::get_voltage i(vi_s-m1)]]"
+C {ngspice_get_expr.sym} 570 -1010 2 0 {name=r8 node="[to_eng [ngspice::get_voltage i(vi_s-m1)]]"
 descr="Source Current M1 ="}
 C {devices/vsource.sym} -260 -330 0 0 {name=VVSS value=0}
 C {devices/lab_pin.sym} -260 -420 0 0 {name=p12 lab=VSS}
@@ -508,3 +498,33 @@ C {devices/lab_pin.sym} 640 -470 2 0 {name=p4 lab=VSS}
 C {ammeter.sym} 370 -650 0 1 {name=vi_s-m1}
 C {lab_pin.sym} 370 -510 2 0 {name=p5 lab=V2}
 C {lab_pin.sym} 370 -610 2 0 {name=p6 lab=V1}
+C {launcher.sym} -310 -1010 0 0 {name=h1
+descr="Live annotate" 
+tclcommand="set show_hidden_texts 1; xschem annotate_op"
+}
+C {launcher.sym} -385 -1050 0 0 {name=h2 
+descr="Load DC" 
+tclcommand="
+xschem raw_read $netlist_dir/template_adv_tb.raw dc
+"
+}
+C {launcher.sym} -10 -1070 0 0 {name=h3 
+descr="Load AC" 
+tclcommand="
+xschem raw_read $netlist_dir/template_adv_tb.raw ac
+"
+}
+C {launcher.sym} 15 -1030 0 0 {name=h4
+descr="Live annotate" 
+tclcommand="set show_hidden_texts 1; xschem annotate_op"
+}
+C {launcher.sym} -170 -1212.5 0 0 {name=h5 
+descr="Load TRAN" 
+tclcommand="
+xschem raw_read $netlist_dir/template_adv_tb.raw tran
+"
+}
+C {launcher.sym} -95 -1182.5 0 0 {name=h9
+descr="Live annotate" 
+tclcommand="set show_hidden_texts 1; xschem annotate_op"
+}
