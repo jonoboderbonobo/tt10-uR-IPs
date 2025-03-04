@@ -260,8 +260,6 @@ ______________________} 220 -1510 0 0 0.4 0.4 { layer=3
 }
 N -150 -820 -130 -820 {lab=VDD_jump}
 N -250 -820 -250 -780 {lab=#net1}
-N -250 -670 -250 -640 {lab=Vdd}
-N -250 -670 -190 -670 {lab=Vdd}
 N -250 -820 -210 -820 {lab=#net1}
 N 120 -370 130 -370 {lab=VDD_jump}
 N 130 -370 130 -340 {lab=VDD_jump}
@@ -282,8 +280,8 @@ N 570 -60 580 -60 {lab=V4}
 N 570 -40 570 -20 {lab=V4}
 N 570 -180 590 -180 {lab=V3}
 N 440 -90 530 -90 {lab=Vnbias}
-N 250 -260 270 -260 {lab=Vnbias}
-N 250 -290 270 -290 {lab=Vpbias}
+N 300 -260 320 -260 {lab=Vnbias}
+N 300 -290 320 -290 {lab=Vpbias}
 N 440 -650 530 -650 {lab=Vpbias}
 N 570 40 570 70 {lab=0}
 N 570 -210 570 -120 {lab=V3}
@@ -522,9 +520,6 @@ C {devices/lab_pin.sym} -250 -720 0 0 {name=p11 lab=0}
 C {devices/lab_pin.sym} -130 -820 2 0 {name=p12 lab=VDD_jump}
 C {ammeter.sym} -180 -820 3 1 {name=vi_total}
 C {devices/lab_pin.sym} 120 -370 0 0 {name=p2 lab=VDD_jump}
-C {devices/vsource.sym} -250 -610 0 0 {name=vs_vdd value=1.8}
-C {devices/lab_pin.sym} -250 -580 0 0 {name=p6 lab=0}
-C {devices/lab_pin.sym} -190 -670 2 0 {name=p7 lab=Vdd}
 C {devices/lab_pin.sym} 130 -180 0 0 {name=p1 lab=0}
 C {ammeter.sym} 570 -410 0 1 {name=vi_d}
 C {devices/lab_pin.sym} 570 -760 2 0 {name=p4 lab=VDD_jump}
@@ -541,8 +536,8 @@ value=10k
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 270 -290 0 1 {name=p8 lab=Vpbias}
-C {devices/lab_pin.sym} 270 -260 0 1 {name=p9 lab=Vnbias}
+C {devices/lab_pin.sym} 320 -290 0 1 {name=p8 lab=Vpbias}
+C {devices/lab_pin.sym} 320 -260 0 1 {name=p9 lab=Vnbias}
 C {devices/lab_pin.sym} 570 -580 2 0 {name=p5 lab=V1}
 C {devices/parax_cap.sym} 590 -720 0 0 {name=C2 gnd=0 value=5f m=1}
 C {devices/parax_cap.sym} 590 -540 0 0 {name=C1 gnd=0 value=5f m=1}
