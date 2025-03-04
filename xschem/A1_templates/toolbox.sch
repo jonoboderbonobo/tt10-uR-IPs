@@ -1883,3 +1883,8 @@ spiceprefix=X
 C {lab_wire.sym} 2230 4450 2 0 {name=p108 sig_type=std_logic lab=0
 }
 C {ammeter.sym} 2230 4260 0 1 {name=vi_8}
+C {res.sym} 550 -1190 0 0 {name=R50
+value='Vdd/imax'
+footprint=1206
+device=resistor
+m=1}

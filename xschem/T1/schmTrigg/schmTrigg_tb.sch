@@ -81,15 +81,12 @@ T {Supply Voltage: @spice_get_voltage(vdd)\\V} 400 -1340 0 0 0.4 0.4 {floater=tr
 T {			Circuit Information
 __________________________________________________} 310 -1400 0 0 0.4 0.4 { layer=3
 }
-N -260 -270 -230 -270 {
-lab=VSS}
 N -260 -440 -230 -440 {
 lab=VDD}
 N -260 -760 -230 -760 {
 lab=Vin1}
 N -230 -760 -180 -760 {lab=Vin1}
 N -230 -440 -180 -440 {lab=VDD}
-N -230 -270 -200 -270 {lab=VSS}
 N 520 -780 540 -780 {lab=Vout}
 N 510 -780 520 -780 {lab=Vout}
 N 340 -780 370 -780 {lab=Vin1}
@@ -198,15 +195,6 @@ C {ngspice_get_expr.sym} 720 -1320 2 0 {name=r7 node="[to_eng [expr \{([ngspice:
 descr="Drain-Source Channel Resistance M1 ="}
 C {ngspice_get_expr.sym} 750 -1320 2 0 {name=r8 node="[to_eng [ngspice::get_voltage i(vi_s-m1)]]"
 descr="Source Current M1 ="}
-C {devices/vsource.sym} -260 -180 0 0 {name=VVSS value=0}
-C {devices/lab_pin.sym} -260 -270 0 0 {name=p12 lab=VSS}
-C {devices/lab_pin.sym} -260 -150 0 0 {name=p13 lab=0}
-C {devices/res.sym} -260 -240 0 0 {name=R4
-value=30
-footprint=1206
-device=resistor
-m=1}
-C {devices/parax_cap.sym} -200 -260 0 0 {name=C6 gnd=0 value=100p m=1}
 C {devices/vsource.sym} -260 -350 0 0 {name=VVCC1 value='VCC'}
 C {devices/lab_pin.sym} -260 -440 0 0 {name=p32 lab=VDD}
 C {devices/lab_pin.sym} -260 -320 0 0 {name=p33 lab=0}
