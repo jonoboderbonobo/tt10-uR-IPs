@@ -150,17 +150,15 @@ N 450 -400 470 -400 {lab=Vin}
 N 650 -550 910 -550 {lab=Vout}
 N 650 -260 650 -250 {lab=0}
 N 650 -800 660 -800 {lab=VDD}
-N 650 -700 660 -700 {lab=V1}
-N 650 -300 660 -300 {lab=0}
-N 650 -400 660 -400 {lab=V2}
+N 650 -700 660 -700 {lab=VDD}
+N 650 -300 660 -300 {lab=#net1}
+N 650 -400 660 -400 {lab=#net2}
 N 1130 -550 1190 -550 {lab=Vout}
-N 660 -300 660 -270 {lab=0}
 N 650 -270 660 -270 {lab=0}
-N 950 -380 960 -380 {lab=V2}
+N 950 -380 960 -380 {lab=#net3}
 N 950 -350 960 -350 {lab=V2}
-N 950 -720 960 -720 {lab=V1}
+N 950 -720 960 -720 {lab=VDD}
 N 650 -730 660 -730 {lab=V1}
-N 660 -830 660 -800 {lab=VDD}
 N 650 -830 660 -830 {lab=VDD}
 N 650 -370 660 -370 {lab=V2}
 N 470 -800 610 -800 {lab=Vin}
@@ -189,10 +187,6 @@ N 1040 -550 1090 -550 {lab=Vout}
 N 1090 -550 1130 -550 {lab=Vout}
 N 950 -750 960 -750 {lab=V1}
 N 980 -550 1040 -550 {lab=Vout}
-N 660 -730 660 -700 {lab=V1}
-N 960 -750 960 -720 {lab=V1}
-N 660 -400 660 -370 {lab=V2}
-N 960 -380 960 -350 {lab=V2}
 N -260 -590 -260 -530 {lab=VDD}
 N -260 -760 -260 -700 {lab=Vin}
 C {lab_pin.sym} -260 -640 0 0 {name=p10 lab=0}
@@ -365,3 +359,12 @@ nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
+C {devices/lab_pin.sym} 660 -800 2 0 {name=p3 lab=VDD
+}
+C {devices/lab_pin.sym} 660 -700 2 0 {name=p4 lab=VDD
+}
+C {devices/lab_pin.sym} 960 -720 2 0 {name=p5 lab=VDD
+}
+C {devices/lab_pin.sym} 660 -400 2 0 {name=p6 lab=0}
+C {devices/lab_pin.sym} 660 -300 2 0 {name=p7 lab=0}
+C {devices/lab_pin.sym} 960 -380 2 0 {name=p8 lab=0}

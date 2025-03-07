@@ -280,8 +280,8 @@ N 570 -60 580 -60 {lab=V4}
 N 570 -40 570 -20 {lab=V4}
 N 570 -180 590 -180 {lab=V3}
 N 440 -90 530 -90 {lab=Vnbias}
-N 300 -260 320 -260 {lab=Vnbias}
-N 300 -290 320 -290 {lab=Vpbias}
+N 250 -260 270 -260 {lab=Vnbias}
+N 250 -290 270 -290 {lab=Vpbias}
 N 440 -650 530 -650 {lab=Vpbias}
 N 570 40 570 70 {lab=0}
 N 570 -210 570 -120 {lab=V3}
@@ -536,8 +536,8 @@ value=10k
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 320 -290 0 1 {name=p8 lab=Vpbias}
-C {devices/lab_pin.sym} 320 -260 0 1 {name=p9 lab=Vnbias}
+C {devices/lab_pin.sym} 270 -290 0 1 {name=p8 lab=Vpbias}
+C {devices/lab_pin.sym} 270 -260 0 1 {name=p9 lab=Vnbias}
 C {devices/lab_pin.sym} 570 -580 2 0 {name=p5 lab=V1}
 C {devices/parax_cap.sym} 590 -720 0 0 {name=C2 gnd=0 value=5f m=1}
 C {devices/parax_cap.sym} 590 -540 0 0 {name=C1 gnd=0 value=5f m=1}

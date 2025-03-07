@@ -1,0 +1,84 @@
+magic
+tech sky130A
+timestamp 1741194617
+<< nwell >>
+rect -120 140 85 285
+<< nmos >>
+rect 0 0 15 105
+rect 370 40 385 135
+<< pmos >>
+rect 0 160 15 265
+<< ndiff >>
+rect -50 90 0 105
+rect -50 15 -35 90
+rect -15 15 0 90
+rect -50 0 0 15
+rect 15 90 65 105
+rect 15 15 30 90
+rect 50 15 65 90
+rect 345 40 370 135
+rect 385 125 425 135
+rect 385 50 395 125
+rect 415 50 425 125
+rect 385 40 425 50
+rect 15 0 65 15
+<< pdiff >>
+rect -50 250 0 265
+rect -50 175 -35 250
+rect -15 175 0 250
+rect -50 160 0 175
+rect 15 250 65 265
+rect 15 175 30 250
+rect 50 175 65 250
+rect 15 160 65 175
+<< ndiffc >>
+rect -35 15 -15 90
+rect 30 15 50 90
+rect 395 50 415 125
+<< pdiffc >>
+rect -35 175 -15 250
+rect 30 175 50 250
+<< psubdiff >>
+rect -100 90 -50 105
+rect -100 15 -85 90
+rect -65 15 -50 90
+rect -100 0 -50 15
+<< nsubdiff >>
+rect -100 250 -50 265
+rect -100 175 -85 250
+rect -65 175 -50 250
+rect -100 160 -50 175
+<< psubdiffcont >>
+rect -85 15 -65 90
+<< nsubdiffcont >>
+rect -85 175 -65 250
+<< poly >>
+rect 0 265 15 280
+rect 0 105 15 160
+rect 370 135 385 150
+rect 370 25 385 40
+rect 0 -15 15 0
+<< locali >>
+rect -95 250 -5 260
+rect -95 175 -85 250
+rect -65 175 -35 250
+rect -15 175 -5 250
+rect -95 165 -5 175
+rect 20 250 60 260
+rect 20 175 30 250
+rect 50 175 60 250
+rect 20 165 60 175
+rect 385 125 425 135
+rect -95 90 -5 100
+rect -95 15 -85 90
+rect -65 15 -35 90
+rect -15 15 -5 90
+rect -95 5 -5 15
+rect 20 90 60 100
+rect 20 15 30 90
+rect 50 15 60 90
+rect 385 50 395 125
+rect 415 50 425 125
+rect 385 40 425 50
+rect 20 5 60 15
+<< end >>

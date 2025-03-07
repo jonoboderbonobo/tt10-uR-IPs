@@ -846,6 +846,196 @@ N 5320 2500 5500 2500 {lab=#net14}
 N 5500 2500 5500 2570 {lab=#net14}
 N 5230 3150 5230 3180 {lab=VstartMax}
 N 5230 3240 5230 3280 {lab=V1}
+N 1265 6027.5 1265 6057.5 {lab=V1n}
+N 1375 5987.5 1395 5987.5 {lab=V1}
+N 1755 6027.5 1755 6057.5 {lab=V2n}
+N 1955 5987.5 1995 5987.5 {lab=V2}
+N 2165 6027.5 2165 6057.5 {lab=V3n}
+N 1357.5 5937.5 1357.5 5987.5 {lab=V1}
+N 1855 5937.5 1855 5987.5 {lab=V2}
+N 1255 6177.5 1265 6177.5 {lab=0}
+N 1255 6177.5 1255 6207.5 {lab=0}
+N 1255 6207.5 1265 6207.5 {lab=0}
+N 1255 5767.5 1265 5767.5 {lab=Vjump}
+N 1255 5737.5 1255 5767.5 {lab=Vjump}
+N 1255 5737.5 1265 5737.5 {lab=Vjump}
+N 1265 5707.5 1265 5737.5 {lab=Vjump}
+N 1265 5797.5 1265 5857.5 {lab=V1p}
+N 1305 6177.5 1325 6177.5 {lab=Vnbias}
+N 1305 5767.5 1325 5767.5 {lab=Vpbias}
+N 1745 6177.5 1755 6177.5 {lab=0}
+N 1745 6177.5 1745 6207.5 {lab=0}
+N 1745 6207.5 1755 6207.5 {lab=0}
+N 1745 5767.5 1755 5767.5 {lab=Vjump}
+N 1745 5737.5 1745 5767.5 {lab=Vjump}
+N 1745 5737.5 1755 5737.5 {lab=Vjump}
+N 1755 5707.5 1755 5737.5 {lab=Vjump}
+N 1755 5797.5 1755 5857.5 {lab=V2p}
+N 1795 6177.5 1815 6177.5 {lab=Vnbias}
+N 1795 5767.5 1815 5767.5 {lab=Vpbias}
+N 2155 6177.5 2165 6177.5 {lab=0}
+N 2155 6177.5 2155 6207.5 {lab=0}
+N 2155 6207.5 2165 6207.5 {lab=0}
+N 2155 5767.5 2165 5767.5 {lab=Vjump}
+N 2155 5737.5 2155 5767.5 {lab=Vjump}
+N 2155 5737.5 2165 5737.5 {lab=Vjump}
+N 2165 5707.5 2165 5737.5 {lab=Vjump}
+N 2165 5797.5 2165 5857.5 {lab=V3p}
+N 2205 6177.5 2225 6177.5 {lab=Vnbias}
+N 2205 5767.5 2225 5767.5 {lab=Vpbias}
+N 1865 5987.5 1895 5987.5 {lab=V2}
+N 1265 6117.5 1265 6147.5 {lab=#net1}
+N 1755 6117.5 1755 6147.5 {lab=#net2}
+N 2165 6117.5 2165 6147.5 {lab=#net3}
+N 1265 5917.5 1265 5947.5 {lab=#net4}
+N 1755 5917.5 1755 5947.5 {lab=#net5}
+N 2165 5917.5 2165 5947.5 {lab=#net6}
+N 2355 5987.5 2355 6027.5 {lab=V3}
+N 2355 6087.5 2355 6117.5 {lab=#net7}
+N 2385 6157.5 2385 6167.5 {lab=0}
+N 2355 6167.5 2385 6167.5 {lab=0}
+N 2355 6157.5 2355 6167.5 {lab=0}
+N 2325 6167.5 2355 6167.5 {lab=0}
+N 1255 6367.5 2515 6367.5 {lab=#net8}
+N 1945 5987.5 1945 6027.5 {lab=V2}
+N 1945 6087.5 1945 6117.5 {lab=#net9}
+N 1975 6157.5 1975 6167.5 {lab=0}
+N 1945 6167.5 1975 6167.5 {lab=0}
+N 1945 6157.5 1945 6167.5 {lab=0}
+N 1915 6167.5 1945 6167.5 {lab=0}
+N 1455 5987.5 1455 6027.5 {lab=V1}
+N 1455 6087.5 1455 6117.5 {lab=#net10}
+N 1455 6167.5 1485 6167.5 {lab=0}
+N 1455 6157.5 1455 6167.5 {lab=0}
+N 1425 6167.5 1455 6167.5 {lab=0}
+N 1215 5837.5 1265 5837.5 {lab=V1p}
+N 1705 5837.5 1755 5837.5 {lab=V2p}
+N 2115 5837.5 2165 5837.5 {lab=V3p}
+N 1425 6157.5 1425 6167.5 {lab=0}
+N 1755 6207.5 1755 6227.5 {lab=0}
+N 1265 6207.5 1265 6227.5 {lab=0}
+N 1945 6167.5 1945 6237.5 {lab=0}
+N 1455 6167.5 1455 6237.5 {lab=0}
+N 2165 6207.5 2165 6227.5 {lab=0}
+N 1075 5987.5 1075 6367.5 {lab=#net8}
+N 715 6107.5 715 6127.5 {lab=Vjump}
+N 715 6187.5 715 6207.5 {lab=#net11}
+N 715 6267.5 715 6287.5 {lab=#net12}
+N 1075 6367.5 1175 6367.5 {lab=#net8}
+N 1545 5987.5 1665 5987.5 {lab=V1}
+N 1485 6157.5 1485 6167.5 {lab=0}
+N 1075 5987.5 1155 5987.5 {lab=#net8}
+N 2255 5937.5 2255 5987.5 {lab=V3}
+N 2275 5987.5 2325 5987.5 {lab=V3}
+N 2895 6027.5 2895 6057.5 {lab=V4n}
+N 2885 6177.5 2895 6177.5 {lab=0}
+N 2885 6177.5 2885 6207.5 {lab=0}
+N 2885 6207.5 2895 6207.5 {lab=0}
+N 2885 5767.5 2895 5767.5 {lab=Vjump}
+N 2885 5737.5 2885 5767.5 {lab=Vjump}
+N 2885 5737.5 2895 5737.5 {lab=Vjump}
+N 2895 5707.5 2895 5737.5 {lab=Vjump}
+N 2895 5797.5 2895 5857.5 {lab=V4p}
+N 2935 6177.5 2955 6177.5 {lab=Vnbias}
+N 2935 5767.5 2955 5767.5 {lab=Vpbias}
+N 2895 6117.5 2895 6147.5 {lab=#net13}
+N 2895 5917.5 2895 5947.5 {lab=#net14}
+N 2845 5837.5 2895 5837.5 {lab=V4p}
+N 2895 6207.5 2895 6227.5 {lab=0}
+N 2355 6167.5 2355 6237.5 {lab=0}
+N 1175 6367.5 1255 6367.5 {lab=#net8}
+N 1215 6057.5 1265 6057.5 {lab=V1n}
+N 1705 6057.5 1755 6057.5 {lab=V2n}
+N 2115 6057.5 2165 6057.5 {lab=V3n}
+N 2845 6057.5 2895 6057.5 {lab=V4n}
+N 1395 5987.5 1545 5987.5 {lab=V1}
+N 1895 5987.5 1955 5987.5 {lab=V2}
+N 2325 5987.5 2385 5987.5 {lab=V3}
+N 995 5257.5 1005 5257.5 {lab=#net15}
+N 995 5287.5 1005 5287.5 {lab=Vjump}
+N 995 5227.5 995 5257.5 {lab=#net15}
+N 735 5287.5 815 5287.5 {lab=VstartBias}
+N 845 5467.5 845 5477.5 {lab=0}
+N 815 5477.5 845 5477.5 {lab=0}
+N 815 5467.5 815 5477.5 {lab=0}
+N 785 5477.5 815 5477.5 {lab=0}
+N 785 5467.5 785 5477.5 {lab=0}
+N 1185 5367.5 1215 5367.5 {lab=VstartMax}
+N 1175 5457.5 1175 5477.5 {lab=0}
+N 1175 5367.5 1175 5397.5 {lab=VstartMax}
+N 995 5317.5 995 5367.5 {lab=#net16}
+N 805 5017.5 815 5017.5 {lab=Vjump}
+N 805 4987.5 805 5017.5 {lab=Vjump}
+N 805 4987.5 815 4987.5 {lab=Vjump}
+N 815 4957.5 815 4987.5 {lab=Vjump}
+N 855 5017.5 875 5017.5 {lab=Vpbias}
+N 815 5287.5 855 5287.5 {lab=VstartBias}
+N 1115 5367.5 1185 5367.5 {lab=VstartMax}
+N 995 5367.5 1055 5367.5 {lab=#net16}
+N 815 5477.5 815 5557.5 {lab=0}
+N 815 5247.5 815 5287.5 {lab=VstartBias}
+N 815 5287.5 815 5327.5 {lab=VstartBias}
+N 815 5047.5 815 5187.5 {lab=#net15}
+N 815 5387.5 815 5427.5 {lab=#net17}
+N 915 5287.5 955 5287.5 {lab=#net18}
+N 815 5157.5 995 5157.5 {lab=#net15}
+N 995 5157.5 995 5227.5 {lab=#net15}
+N 1455 5857.5 1455 5887.5 {lab=VstartMax}
+N 1455 5947.5 1455 5987.5 {lab=V1}
+N 2325 6157.5 2325 6167.5 {lab=0}
+N 1915 6157.5 1915 6167.5 {lab=0}
+N 1345 5987.5 1375 5987.5 {lab=V1}
+N 1155 5987.5 1225 5987.5 {lab=#net8}
+N 1835 5987.5 1865 5987.5 {lab=V2}
+N 1665 5987.5 1715 5987.5 {lab=V1}
+N 1995 5987.5 2125 5987.5 {lab=V2}
+N 2245 5987.5 2275 5987.5 {lab=V3}
+N 2515 5457.5 2535 5457.5 {lab=Vpbias}
+N 2515 5487.5 2535 5487.5 {lab=Vnbias}
+N 2515 5487.5 2515 5557.5 {lab=Vnbias}
+N 2515 5397.5 2515 5457.5 {lab=Vpbias}
+N 3035 6077.5 3035 6097.5 {lab=0}
+N 3035 5987.5 3035 6017.5 {lab=Vclk1}
+N 3035 5987.5 3085 5987.5 {lab=Vclk1}
+N 2597.5 5987.5 2657.5 5987.5 {lab=#net19}
+N 2657.5 5987.5 2717.5 5987.5 {lab=#net19}
+N 2385 5987.5 2537.5 5987.5 {lab=V3}
+N 2657.5 6047.5 2657.5 6367.5 {lab=#net8}
+N 2515 6367.5 2657.5 6367.5 {lab=#net8}
+N 2915 5927.5 2915 5947.5 {lab=Vjump}
+N 2975 5987.5 3035 5987.5 {lab=Vclk1}
+N 2777.5 5987.5 2855 5987.5 {lab=#net20}
+N 2915 6027.5 2915 6047.5 {lab=0}
+N 2185 6027.5 2185 6047.5 {lab=0}
+N 1775 6027.5 1775 6047.5 {lab=0}
+N 1285 6027.5 1285 6047.5 {lab=0}
+N 2185 5927.5 2185 5947.5 {lab=Vjump}
+N 1775 5927.5 1775 5947.5 {lab=Vjump}
+N 1285 5927.5 1285 5947.5 {lab=Vjump}
+N 3202.5 6027.5 3202.5 6057.5 {lab=V5n}
+N 3192.5 6177.5 3202.5 6177.5 {lab=0}
+N 3192.5 6177.5 3192.5 6207.5 {lab=0}
+N 3192.5 6207.5 3202.5 6207.5 {lab=0}
+N 3192.5 5767.5 3202.5 5767.5 {lab=Vjump}
+N 3192.5 5737.5 3192.5 5767.5 {lab=Vjump}
+N 3192.5 5737.5 3202.5 5737.5 {lab=Vjump}
+N 3202.5 5707.5 3202.5 5737.5 {lab=Vjump}
+N 3202.5 5797.5 3202.5 5857.5 {lab=V5p}
+N 3242.5 6177.5 3262.5 6177.5 {lab=Vnbias}
+N 3242.5 5767.5 3262.5 5767.5 {lab=Vpbias}
+N 3202.5 6117.5 3202.5 6147.5 {lab=#net21}
+N 3202.5 5917.5 3202.5 5947.5 {lab=#net22}
+N 3152.5 5837.5 3202.5 5837.5 {lab=V5p}
+N 3202.5 6207.5 3202.5 6227.5 {lab=0}
+N 3152.5 6057.5 3202.5 6057.5 {lab=V5n}
+N 3342.5 6077.5 3342.5 6097.5 {lab=0}
+N 3342.5 5987.5 3342.5 6017.5 {lab=Vclk2}
+N 3342.5 5987.5 3392.5 5987.5 {lab=Vclk2}
+N 3222.5 5927.5 3222.5 5947.5 {lab=Vjump}
+N 3282.5 5987.5 3342.5 5987.5 {lab=Vclk2}
+N 3085 5987.5 3162.5 5987.5 {lab=Vclk1}
+N 3222.5 6027.5 3222.5 6047.5 {lab=0}
+N 3085 5957.5 3085 5987.5 {lab=Vclk1}
 C {devices/intuitive_interface_cheatsheet.sym} 630 -2040 0 0 {name=x1}
 C {devices/code.sym} 840 -590 0 0 {name=TT_MODELS
 only_toplevel=true
@@ -1866,3 +2056,241 @@ value=30
 footprint=1206
 device=resistor
 m=1}
+C {lab_pin.sym} 715 6347.5 0 0 {name=p122 lab=0}
+C {vsource.sym} 715 6317.5 0 0 {name=VIN2
+value="0 pulse 0 1.8 100u 1u 1u 1 2 ac 1 0" 
+
+}
+C {lab_pin.sym} 715 6107.5 0 1 {name=p123 lab=Vjump
+}
+C {lab_pin.sym} 1357.5 5937.5 0 1 {name=p124 lab=V1}
+C {lab_pin.sym} 1705 5837.5 2 1 {name=p125 lab=V2p}
+C {devices/lab_pin.sym} 2165 6227.5 2 0 {name=p126 lab=0}
+C {devices/lab_pin.sym} 1755 6227.5 2 0 {name=p127 lab=0}
+C {devices/lab_pin.sym} 1265 6227.5 2 0 {name=p128 lab=0}
+C {sky130_fd_pr/nfet_01v8.sym} 1285 6177.5 0 1 {name=M92
+L=0.4
+W=1 
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 1285 5767.5 0 1 {name=M93
+L=0.35
+W=1
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_pin.sym} 1265 5707.5 0 1 {name=p129 lab=Vjump}
+C {lab_pin.sym} 1325 6177.5 0 1 {name=p130 lab=Vnbias}
+C {lab_pin.sym} 1325 5767.5 0 1 {name=p131 lab=Vpbias}
+C {sky130_fd_pr/nfet_01v8.sym} 1775 6177.5 0 1 {name=M94
+L=0.4
+W=1  
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 1775 5767.5 0 1 {name=M95
+L=0.35
+W=1
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_pin.sym} 1755 5707.5 0 1 {name=p132 lab=Vjump}
+C {lab_pin.sym} 1815 6177.5 0 1 {name=p133 lab=Vnbias}
+C {lab_pin.sym} 1815 5767.5 0 1 {name=p134 lab=Vpbias}
+C {sky130_fd_pr/nfet_01v8.sym} 2185 6177.5 0 1 {name=M96
+L=0.4
+W=1  
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 2185 5767.5 0 1 {name=M97
+L=0.35
+W=1
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_pin.sym} 2165 5707.5 0 1 {name=p135 lab=Vjump}
+C {lab_pin.sym} 2225 6177.5 0 1 {name=p136 lab=Vnbias}
+C {lab_pin.sym} 2225 5767.5 0 1 {name=p137 lab=Vpbias}
+C {ammeter.sym} 1265 6087.5 0 1 {name=vi_1}
+C {lab_pin.sym} 1215 5837.5 2 1 {name=p138 lab=V1p}
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 2355 6137.5 1 0 {name=M98
+L=2
+W=2
+nf=1 mult=1
+model=pfet_01v8_hvt
+spiceprefix=X
+}
+C {lab_pin.sym} 1855 5937.5 0 1 {name=p139 lab=V2}
+C {ammeter.sym} 1755 6087.5 0 1 {name=vi_2}
+C {ammeter.sym} 2165 6087.5 0 1 {name=vi_3}
+C {ammeter.sym} 2355 6057.5 0 1 {name=vi_4}
+C {ammeter.sym} 1265 5887.5 0 1 {name=vi_5}
+C {ammeter.sym} 1755 5887.5 0 1 {name=vi_6}
+C {ammeter.sym} 2165 5887.5 0 1 {name=vi_7}
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 1945 6137.5 1 0 {name=M99
+L=2
+W=2
+nf=1 mult=1
+model=pfet_01v8_hvt
+spiceprefix=X
+}
+C {lab_wire.sym} 1945 6237.5 0 0 {name=p140 sig_type=std_logic lab=0
+}
+C {ammeter.sym} 1945 6057.5 0 1 {name=vi_8}
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 1455 6137.5 1 0 {name=M100
+L=2
+W=2
+nf=1 mult=1
+model=pfet_01v8_hvt
+spiceprefix=X
+}
+C {lab_wire.sym} 1455 6237.5 0 0 {name=p141 sig_type=std_logic lab=0
+}
+C {ammeter.sym} 1455 6057.5 0 1 {name=vi_9}
+C {lab_pin.sym} 2115 5837.5 2 1 {name=p142 lab=V3p}
+C {ammeter.sym} 715 6157.5 2 1 {name=vi_total}
+C {res.sym} 715 6237.5 0 0 {name=R48
+value=30
+footprint=1206
+device=resistor
+m=1}
+C {lab_pin.sym} 2255 5937.5 0 1 {name=p143 lab=V3}
+C {devices/lab_pin.sym} 2895 6227.5 2 0 {name=p144 lab=0}
+C {sky130_fd_pr/nfet_01v8.sym} 2915 6177.5 0 1 {name=M101
+L=0.4
+W=1
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 2915 5767.5 0 1 {name=M102
+L=0.35
+W=1
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_pin.sym} 2895 5707.5 0 1 {name=p145 lab=Vjump}
+C {lab_pin.sym} 2955 6177.5 0 1 {name=p146 lab=Vnbias}
+C {lab_pin.sym} 2955 5767.5 0 1 {name=p147 lab=Vpbias}
+C {ammeter.sym} 2895 6087.5 0 1 {name=vi_10}
+C {ammeter.sym} 2895 5887.5 0 1 {name=vi_14}
+C {lab_pin.sym} 2845 5837.5 2 1 {name=p148 lab=V4p}
+C {T1/schmTrigg/schmTrigg.sym} 2715 6187.5 0 0 {name=x7}
+C {devices/lab_pin.sym} 3085 5957.5 2 0 {name=p149 lab=Vclk1
+}
+C {lab_wire.sym} 2355 6237.5 0 0 {name=p150 sig_type=std_logic lab=0
+}
+C {lab_pin.sym} 2845 6057.5 2 1 {name=p151 lab=V4n}
+C {lab_pin.sym} 2115 6057.5 2 1 {name=p152 lab=V3n}
+C {lab_pin.sym} 1705 6057.5 2 1 {name=p153 lab=V2n}
+C {lab_pin.sym} 1215 6057.5 2 1 {name=p154 lab=V1n}
+C {sky130_fd_pr/pfet_01v8.sym} 975 5287.5 0 0 {name=M103
+L=0.15
+W=1
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_pin.sym} 735 5287.5 2 1 {name=p155 lab=VstartBias
+}
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 815 5447.5 1 0 {name=M104
+L=1
+W=1
+nf=1 mult=1
+model=pfet_01v8_hvt
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 815 5557.5 0 0 {name=p156 lab=0}
+C {lab_pin.sym} 1215 5367.5 2 0 {name=p157 lab=VstartMax}
+C {lab_pin.sym} 815 4957.5 0 1 {name=p158 lab=Vjump}
+C {capa.sym} 1175 5427.5 0 0 {name=C4
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_pin.sym} 1175 5477.5 2 0 {name=p159 lab=0}
+C {ammeter.sym} 815 5357.5 0 1 {name=vi_16}
+C {ammeter.sym} 815 5217.5 0 1 {name=vi_17}
+C {sky130_fd_pr/pfet_01v8.sym} 835 5017.5 0 1 {name=M105
+L=0.35
+W=1
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_pin.sym} 875 5017.5 0 1 {name=p160 lab=Vpbias}
+C {ammeter.sym} 885 5287.5 1 1 {name=vi_18}
+C {ammeter.sym} 1085 5367.5 3 1 {name=vi_19}
+C {lab_pin.sym} 1455 5857.5 2 0 {name=p161 lab=VstartMax}
+C {res.sym} 1455 5917.5 0 0 {name=R49
+value=30
+footprint=1206
+device=resistor
+m=1}
+C {T0/inv/inv.sym} 1105 6167.5 0 0 {name=x8}
+C {T0/inv/inv.sym} 1595 6167.5 0 0 {name=x9}
+C {T0/inv/inv.sym} 2005 6167.5 0 0 {name=x10}
+C {T2/biasGen/A_tt10_10nA/ibias_10nA.sym} 2825 5657.5 0 1 {name=x11}
+C {devices/lab_pin.sym} 2655 5407.5 2 0 {name=p162 lab=Vjump}
+C {devices/lab_pin.sym} 2655 5537.5 2 0 {name=p163 lab=0}
+C {lab_pin.sym} 2515 5397.5 0 1 {name=p164 lab=Vpbias}
+C {lab_pin.sym} 2515 5557.5 0 1 {name=p165 lab=Vnbias}
+C {capa.sym} 3035 6047.5 0 0 {name=C5
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_pin.sym} 3035 6097.5 2 0 {name=p166 lab=0}
+C {ammeter.sym} 2567.5 5987.5 3 1 {name=vi_out1}
+C {ammeter.sym} 2657.5 6017.5 0 1 {name=vi_out2}
+C {ammeter.sym} 2747.5 5987.5 3 1 {name=vi_out3}
+C {lab_pin.sym} 1005 5287.5 0 1 {name=p167 lab=Vjump}
+C {lab_pin.sym} 2915 5927.5 0 1 {name=p168 lab=Vjump}
+C {devices/lab_pin.sym} 2915 6047.5 2 0 {name=p169 lab=0}
+C {devices/lab_pin.sym} 2185 6047.5 2 0 {name=p170 lab=0}
+C {devices/lab_pin.sym} 1775 6047.5 2 0 {name=p171 lab=0}
+C {devices/lab_pin.sym} 1285 6047.5 2 0 {name=p172 lab=0}
+C {lab_pin.sym} 2185 5927.5 0 1 {name=p173 lab=Vjump}
+C {lab_pin.sym} 1775 5927.5 0 1 {name=p174 lab=Vjump}
+C {lab_pin.sym} 1285 5927.5 0 1 {name=p175 lab=Vjump}
+C {devices/lab_pin.sym} 3202.5 6227.5 2 0 {name=p176 lab=0}
+C {sky130_fd_pr/nfet_01v8.sym} 3222.5 6177.5 0 1 {name=M106
+L=0.4
+W=1
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 3222.5 5767.5 0 1 {name=M107
+L=0.35
+W=1
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_pin.sym} 3202.5 5707.5 0 1 {name=p177 lab=Vjump}
+C {lab_pin.sym} 3262.5 6177.5 0 1 {name=p178 lab=Vnbias}
+C {lab_pin.sym} 3262.5 5767.5 0 1 {name=p179 lab=Vpbias}
+C {ammeter.sym} 3202.5 6087.5 0 1 {name=vi_20}
+C {ammeter.sym} 3202.5 5887.5 0 1 {name=vi_21}
+C {lab_pin.sym} 3152.5 5837.5 2 1 {name=p180 lab=V5p}
+C {T1/schmTrigg/schmTrigg.sym} 3022.5 6187.5 0 0 {name=x12}
+C {devices/lab_pin.sym} 3392.5 5987.5 2 0 {name=p181 lab=Vclk2}
+C {lab_pin.sym} 3152.5 6057.5 2 1 {name=p182 lab=V5n}
+C {capa.sym} 3342.5 6047.5 0 0 {name=C6
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_pin.sym} 3342.5 6097.5 2 0 {name=p183 lab=0}
+C {lab_pin.sym} 3222.5 5927.5 0 1 {name=p184 lab=Vjump}
+C {devices/lab_pin.sym} 3222.5 6047.5 2 0 {name=p185 lab=0}

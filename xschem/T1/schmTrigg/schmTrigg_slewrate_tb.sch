@@ -35,8 +35,8 @@ y1=-1.1
 y2=1.9
 divy=5
 subdivy=1
-x1=3.9638876e-09
-x2=4.232036e-09
+x1=3.9450406e-09
+x2=4.4506919e-09
 divx=6
 subdivx=1
 
@@ -83,7 +83,7 @@ Vjump"
 
 
 
-hcursor2_y=1.6283788}
+hcursor2_y=1.6284}
 B 2 1730 -1148.203221277284 2360 -1028.203221277284 {flags=graph,unlocked
 
 sim_type=tran
@@ -110,12 +110,12 @@ node=Vdd}
 B 2 1730 -665 2360 -385 {flags=graph,unlocked
 
 sim_type=tran
-y1=-0.0052
-y2=0.0024
+y1=-0.00027
+y2=0.00015
 divy=5
 subdivy=1
-x1=3.9998315e-09
-x2=4.0055182e-09
+x1=4.005301e-09
+x2=4.0065191e-09
 divx=6
 subdivx=1
 
@@ -157,6 +157,7 @@ autoload=1
 color="4 7"
 node="i(vi_ig)
 i(vi_id)"
+
 
 
 
@@ -213,18 +214,16 @@ N 650 -370 650 -360 {lab=V2}
 N 450 -400 470 -400 {lab=Vjump}
 N 650 -550 910 -550 {lab=Vout}
 N 650 -260 650 -250 {lab=#net2}
-N 650 -800 660 -800 {lab=#net1}
-N 650 -700 660 -700 {lab=V1}
-N 650 -300 660 -300 {lab=#net2}
-N 650 -400 660 -400 {lab=V2}
+N 650 -800 660 -800 {lab=VDD}
+N 650 -700 660 -700 {lab=VDD}
+N 650 -300 660 -300 {lab=0}
+N 650 -400 660 -400 {lab=0}
 N 1130 -550 1190 -550 {lab=Vout}
-N 660 -300 660 -270 {lab=#net2}
 N 650 -270 660 -270 {lab=#net2}
-N 950 -380 960 -380 {lab=V2}
+N 950 -380 960 -380 {lab=0}
 N 950 -350 960 -350 {lab=V2}
-N 950 -720 960 -720 {lab=V1}
+N 950 -720 960 -720 {lab=VDD}
 N 650 -730 660 -730 {lab=V1}
-N 660 -830 660 -800 {lab=#net1}
 N 650 -830 660 -830 {lab=#net1}
 N 650 -370 660 -370 {lab=V2}
 N 470 -800 610 -800 {lab=Vjump}
@@ -253,10 +252,6 @@ N 1040 -550 1090 -550 {lab=Vout}
 N 1090 -550 1130 -550 {lab=Vout}
 N 950 -750 960 -750 {lab=V1}
 N 980 -550 1040 -550 {lab=Vout}
-N 660 -730 660 -700 {lab=V1}
-N 960 -750 960 -720 {lab=V1}
-N 660 -400 660 -370 {lab=V2}
-N 960 -380 960 -350 {lab=V2}
 N -270 -880 -270 -860 {lab=Vjump}
 N -270 -800 -270 -780 {lab=#net5}
 N -270 -720 -270 -700 {lab=#net6}
@@ -448,3 +443,9 @@ C {ammeter.sym} 950 -460 0 0 {name=vi_id1}
 C {ammeter.sym} 950 -640 0 0 {name=vi_id2}
 C {ammeter.sym} 650 -900 0 0 {name=vi_id3}
 C {ammeter.sym} 650 -220 0 0 {name=vi_id4}
+C {devices/lab_pin.sym} 660 -800 2 0 {name=p7 lab=VDD}
+C {devices/lab_pin.sym} 660 -700 2 0 {name=p8 lab=VDD}
+C {devices/lab_pin.sym} 960 -720 2 0 {name=p10 lab=VDD}
+C {devices/lab_pin.sym} 660 -400 2 0 {name=p11 lab=0}
+C {devices/lab_pin.sym} 660 -300 2 0 {name=p12 lab=0}
+C {devices/lab_pin.sym} 960 -380 2 0 {name=p13 lab=0}

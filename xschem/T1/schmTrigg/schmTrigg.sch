@@ -19,20 +19,13 @@ N 530 -390 530 -380 {lab=Vn}
 N 330 -420 350 -420 {lab=Vin}
 N 530 -570 790 -570 {lab=Vout}
 N 530 -280 530 -270 {lab=VSS}
-N 530 -820 540 -820 {lab=VDD}
-N 530 -720 540 -720 {lab=Vp}
-N 530 -320 540 -320 {lab=VSS}
-N 530 -420 540 -420 {lab=Vn}
+N 530 -820 540 -820 {lab=pBulk}
+N 530 -720 540 -720 {lab=pBulk}
+N 530 -320 540 -320 {lab=nBulk}
+N 530 -420 540 -420 {lab=nBulk}
 N 1010 -570 1070 -570 {lab=Vout}
-N 540 -320 540 -290 {lab=VSS}
-N 530 -290 540 -290 {lab=VSS}
-N 830 -400 840 -400 {lab=Vn}
-N 830 -370 840 -370 {lab=Vn}
-N 830 -740 840 -740 {lab=Vp}
-N 530 -750 540 -750 {lab=Vp}
-N 540 -850 540 -820 {lab=VDD}
-N 530 -850 540 -850 {lab=VDD}
-N 530 -390 540 -390 {lab=Vn}
+N 830 -400 840 -400 {lab=nBulk}
+N 830 -740 840 -740 {lab=pBulk}
 N 350 -820 490 -820 {lab=Vin}
 N 350 -720 490 -720 {lab=Vin}
 N 350 -320 490 -320 {lab=Vin}
@@ -57,16 +50,11 @@ N 710 -390 710 -370 {lab=Vn}
 N 790 -570 860 -570 {lab=Vout}
 N 920 -570 970 -570 {lab=Vout}
 N 970 -570 1010 -570 {lab=Vout}
-N 830 -770 840 -770 {lab=Vp}
 N 860 -570 920 -570 {lab=Vout}
-N 540 -750 540 -720 {lab=Vp}
-N 840 -770 840 -740 {lab=Vp}
-N 540 -420 540 -390 {lab=Vn}
-N 840 -400 840 -370 {lab=Vn}
 C {ipin.sym} 70 -590 0 0 {name=p5 lab=Vin}
 C {ipin.sym} 70 -510 0 0 {name=p6 lab=VDD}
 C {ipin.sym} 70 -550 0 0 {name=p7 lab=VSS}
-C {opin.sym} 70 -460 0 0 {name=p8 lab=Vout}
+C {opin.sym} 72.5 -395 0 0 {name=p8 lab=Vout}
 C {devices/lab_pin.sym} 530 -890 2 0 {name=p83 lab=VDD
 }
 C {devices/lab_pin.sym} 530 -270 2 0 {name=p84 lab=VSS
@@ -124,4 +112,18 @@ W=1
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
+}
+C {ipin.sym} 72.5 -480 0 0 {name=p1 lab=nBulk}
+C {ipin.sym} 70 -450 0 0 {name=p2 lab=pBulk}
+C {devices/lab_pin.sym} 540 -320 2 0 {name=p3 lab=nBulk
+}
+C {devices/lab_pin.sym} 540 -420 2 0 {name=p4 lab=nBulk
+}
+C {devices/lab_pin.sym} 840 -400 2 0 {name=p9 lab=nBulk
+}
+C {devices/lab_pin.sym} 540 -720 2 0 {name=p10 lab=pBulk
+}
+C {devices/lab_pin.sym} 540 -820 2 0 {name=p11 lab=pBulk
+}
+C {devices/lab_pin.sym} 840 -740 2 0 {name=p12 lab=pBulk
 }

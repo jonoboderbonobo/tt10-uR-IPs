@@ -92,7 +92,7 @@ node=Vclk
 
 
 
-hcursor1_y=0.90166111}
+hcursor1_y=0.90168023}
 B 2 900 -410 1530 -130 {flags=graph,unlocked
 
 sim_type=tran
@@ -342,25 +342,25 @@ T {Anch} 1545 330 0 0 0.6 0.6 { layer=6}
 N -220 -440 -220 -420 {lab=Vjump}
 N -220 -360 -220 -340 {lab=#net1}
 N -220 -280 -220 -260 {lab=#net2}
-N 520 -480 520 -460 {lab=Vclk}
-N 520 -400 520 -380 {lab=0}
-N 360 -800 400 -800 {lab=#net3}
-N 360 -800 360 -720 {lab=#net3}
-N 320 -830 400 -830 {lab=#net4}
-N 320 -830 320 -720 {lab=#net4}
-N 100 -460 140 -460 {lab=0}
-N 100 -480 140 -480 {lab=Vjump}
-N 460 -480 560 -480 {lab=Vclk}
-N 360 -620 360 -600 {lab=#net5}
-N 320 -620 320 -600 {lab=#net6}
-N 320 -720 320 -680 {lab=#net4}
-N 360 -720 360 -680 {lab=#net3}
-N 520 -750 520 -720 {lab=#net7}
-N 520 -900 520 -880 {lab=#net8}
-N 520 -990 520 -960 {lab=Vjump}
-N 520 -660 520 -640 {lab=0}
-N 200 -480 220 -480 {lab=#net9}
-N 200 -460 220 -460 {lab=#net10}
+N 570 -240 570 -220 {lab=Vclk}
+N 570 -160 570 -140 {lab=0}
+N 410 -560 450 -560 {lab=#net3}
+N 410 -560 410 -480 {lab=#net3}
+N 370 -590 450 -590 {lab=#net4}
+N 370 -590 370 -480 {lab=#net4}
+N 150 -220 190 -220 {lab=0}
+N 150 -240 190 -240 {lab=Vjump}
+N 510 -240 610 -240 {lab=Vclk}
+N 410 -380 410 -360 {lab=#net5}
+N 370 -380 370 -360 {lab=#net6}
+N 370 -480 370 -440 {lab=#net4}
+N 410 -480 410 -440 {lab=#net3}
+N 570 -510 570 -480 {lab=#net7}
+N 570 -660 570 -640 {lab=#net8}
+N 570 -750 570 -720 {lab=Vjump}
+N 570 -420 570 -400 {lab=0}
+N 250 -240 270 -240 {lab=#net9}
+N 250 -220 270 -220 {lab=#net10}
 C {lab_pin.sym} -220 -200 0 0 {name=p14 lab=0}
 C {vsource.sym} -220 -230 0 0 {name=VIN1
 value="0 pulse 0 1.8 100u 1u 1u 1 2 ac 1 0" 
@@ -461,33 +461,33 @@ C {launcher.sym} -525 -492.5 0 0 {name=h8
 descr="Live annotate" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {T2/biasGen/A_tt10_10nA/ibias_10nA.sym} 690 -630 0 1 {name=x3}
-C {devices/lab_pin.sym} 520 -990 2 0 {name=p10 lab=Vjump}
-C {devices/lab_pin.sym} 520 -640 2 0 {name=p11 lab=0}
+C {T2/biasGen/A_tt10_10nA/ibias_10nA.sym} 740 -390 0 1 {name=x3}
+C {devices/lab_pin.sym} 570 -750 2 0 {name=p10 lab=Vjump}
+C {devices/lab_pin.sym} 570 -400 2 0 {name=p11 lab=0}
 C {ammeter.sym} -220 -390 2 1 {name=vi_total}
 C {res.sym} -220 -310 0 0 {name=R2
 value=30
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 560 -480 2 0 {name=p28 lab=Vclk
+C {devices/lab_pin.sym} 610 -240 2 0 {name=p28 lab=Vclk
 }
-C {capa.sym} 520 -430 0 0 {name=C1
+C {capa.sym} 570 -190 0 0 {name=C1
 m=1
 value=1f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_pin.sym} 520 -380 2 0 {name=p41 lab=0}
-C {T3/oscillators/A_tt10_Ring_currentStarved/osc.sym} 160 -160 0 0 {name=x1}
-C {devices/lab_pin.sym} 100 -480 0 0 {name=p1 lab=Vjump}
-C {devices/lab_pin.sym} 100 -460 0 0 {name=p2 lab=0}
-C {ammeter.sym} 520 -690 0 1 {name=vi_bias_n
+C {devices/lab_pin.sym} 570 -140 2 0 {name=p41 lab=0}
+C {T3/oscillators/A_tt10_Ring_currentStarved/osc.sym} 210 80 0 0 {name=x1}
+C {devices/lab_pin.sym} 150 -240 0 0 {name=p1 lab=Vjump}
+C {devices/lab_pin.sym} 150 -220 0 0 {name=p2 lab=0}
+C {ammeter.sym} 570 -450 0 1 {name=vi_bias_n
 }
-C {ammeter.sym} 520 -930 0 1 {name=vi_bias_p
+C {ammeter.sym} 570 -690 0 1 {name=vi_bias_p
 }
-C {ammeter.sym} 360 -650 0 0 {name=vi_3
+C {ammeter.sym} 410 -410 0 0 {name=vi_3
 }
-C {ammeter.sym} 320 -650 0 1 {name=vi_4
+C {ammeter.sym} 370 -410 0 1 {name=vi_4
 }
-C {ammeter.sym} 170 -480 3 0 {name=vi_osc_p}
-C {ammeter.sym} 170 -460 3 1 {name=vi_osc_n}
+C {ammeter.sym} 220 -240 3 0 {name=vi_osc_p}
+C {ammeter.sym} 220 -220 3 1 {name=vi_osc_n}
