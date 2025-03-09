@@ -41,9 +41,6 @@ There are currently five different fields where potential microrobotic applicati
 - Microfluidics
 - Mobile Sensor Networks
 
-Additionally, [Environmental Remediation](https://en.wikipedia.org/wiki/Environmental_remediation) is also a possible application for microrobotics,
-but because of their relatively simplistic behavior, no need for communication and low-cost requirements, microrobots for Environmental Remediation
-will likely not include any CMOS Technology but rather manipulate existing Biological organisms or particles to achieve specific movement, reaction and replication.
 
 
 
