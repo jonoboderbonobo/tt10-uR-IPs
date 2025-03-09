@@ -2,7 +2,7 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO tt_um_tt10_jonobo_uB_ips.mag
+MACRO tt_um_tt10_jonobo_uB_ips
   CLASS BLOCK ;
   FOREIGN tt_um_tt10_jonobo_uB_ips.mag ;
   ORIGIN 0.000 0.000 ;
