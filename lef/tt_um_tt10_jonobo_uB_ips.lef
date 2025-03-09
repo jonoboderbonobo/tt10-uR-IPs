@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO tt_um_tt10_jonobo_uB_ips
+MACRO tt_um_test_commit
   CLASS BLOCK ;
-  FOREIGN tt_um_tt10_jonobo_uB_ips ;
+  FOREIGN tt_um_test_commit ;
   ORIGIN 0.000 0.000 ;
   SIZE 161.000 BY 225.760 ;
   PIN clk
@@ -447,6 +447,6 @@ MACRO tt_um_tt10_jonobo_uB_ips
       LAYER met5 ;
         RECT 139.025 8.590 150.825 14.150 ;
   END
-END tt_um_tt10_jonobo_uB_ips
+END tt_um_test_commit
 END LIBRARY
 
