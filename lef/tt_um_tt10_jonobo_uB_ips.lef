@@ -4,7 +4,7 @@ VERSION 5.7 ;
   BUSBITCHARS "[]" ;
 MACRO tt_um_tt10_jonobo_uB_ips
   CLASS BLOCK ;
-  FOREIGN tt_um_tt10_jonobo_uB_ips.mag ;
+  FOREIGN tt_um_tt10_jonobo_uB_ips ;
   ORIGIN 0.000 0.000 ;
   SIZE 161.000 BY 225.760 ;
   PIN clk
@@ -447,6 +447,6 @@ MACRO tt_um_tt10_jonobo_uB_ips
       LAYER met5 ;
         RECT 139.025 8.590 150.825 14.150 ;
   END
-END tt_um_tt10_jonobo_uB_ips.mag
+END tt_um_tt10_jonobo_uB_ips
 END LIBRARY
 
