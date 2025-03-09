@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module tt_um_test_commit (
+module tt_um_tt10_jonobo_uB_ips (
     input  wire       VGND,
     input  wire       VDPWR,    // 1.8v power supply
 //    input  wire       VAPWR,    // 3.3v power supply

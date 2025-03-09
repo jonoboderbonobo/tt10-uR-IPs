@@ -54,7 +54,7 @@ node=vjump}
 B 2 900 -715 1530 -435 {flags=graph,unlocked
 
 sim_type=tran
-y1=-0.082
+y1=-0.017
 y2=1.9
 divy=5
 subdivy=1
@@ -461,7 +461,6 @@ C {launcher.sym} -525 -492.5 0 0 {name=h8
 descr="Live annotate" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {T2/biasGen/A_tt10_10nA/ibias_10nA.sym} 740 -390 0 1 {name=x3}
 C {devices/lab_pin.sym} 570 -750 2 0 {name=p10 lab=Vjump}
 C {devices/lab_pin.sym} 570 -400 2 0 {name=p11 lab=0}
 C {ammeter.sym} -220 -390 2 1 {name=vi_total}
@@ -491,3 +490,4 @@ C {ammeter.sym} 370 -410 0 1 {name=vi_4
 }
 C {ammeter.sym} 220 -240 3 0 {name=vi_osc_p}
 C {ammeter.sym} 220 -220 3 1 {name=vi_osc_n}
+C {T2/biasGen/A_tt10_10nA/ibias_10nA_parax.sym} 740 -390 0 1 {name=x2}

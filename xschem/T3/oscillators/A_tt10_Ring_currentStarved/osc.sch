@@ -37,12 +37,11 @@ N 970 -580 990 -580 {lab=pBias}
 N 320 -550 320 -520 {lab=#net4}
 N 660 -550 660 -520 {lab=#net5}
 N 930 -550 930 -520 {lab=#net6}
-N 550 -480 630 -480 {lab=#net7}
 N 660 -350 660 -330 {lab=Vss}
 N 320 -350 320 -330 {lab=Vss}
 N 930 -350 930 -330 {lab=Vss}
-N 1020 -480 1070 -480 {lab=#net8}
-N 1300 -440 1300 -410 {lab=#net9}
+N 1020 -480 1070 -480 {lab=#net7}
+N 1300 -440 1300 -410 {lab=#net8}
 N 1290 -380 1300 -380 {lab=Vss}
 N 1290 -380 1290 -350 {lab=Vss}
 N 1290 -350 1300 -350 {lab=Vss}
@@ -52,25 +51,33 @@ N 1290 -610 1300 -610 {lab=Vdd}
 N 1300 -640 1300 -610 {lab=Vdd}
 N 1340 -380 1360 -380 {lab=nBias}
 N 1340 -580 1360 -580 {lab=pBias}
-N 1300 -550 1300 -520 {lab=#net10}
+N 1300 -550 1300 -520 {lab=#net9}
 N 1300 -350 1300 -330 {lab=Vss}
 N 1390 -480 1440 -480 {lab=Out}
-N 1040 -420 1100 -420 {lab=0}
-N 430 -420 490 -420 {lab=0}
-N 460 -480 460 -460 {lab=#net7}
-N 760 -420 820 -420 {lab=0}
-N 790 -480 790 -460 {lab=#net11}
-N 1070 -480 1070 -460 {lab=#net8}
-N 180 -480 270 -480 {lab=#net8}
-N 1070 -480 1160 -480 {lab=#net8}
-N 1160 -480 1160 -260 {lab=#net8}
+N 460 -480 460 -460 {lab=#net10}
+N 180 -480 270 -480 {lab=#net7}
+N 1070 -480 1160 -480 {lab=#net7}
+N 1160 -480 1160 -260 {lab=#net7}
 N 750 -480 790 -480 {lab=#net11}
-N 1160 -480 1250 -480 {lab=#net8}
+N 1160 -480 1250 -480 {lab=#net7}
 N 790 -480 880 -480 {lab=#net11}
-N 460 -480 550 -480 {lab=#net7}
-N 410 -480 460 -480 {lab=#net7}
-N 180 -260 1160 -260 {lab=#net8}
-N 180 -480 180 -260 {lab=#net8}
+N 460 -480 550 -480 {lab=#net10}
+N 410 -480 460 -480 {lab=#net10}
+N 180 -260 1160 -260 {lab=#net7}
+N 180 -480 180 -260 {lab=#net7}
+N 270 -480 280 -480 {lab=#net7}
+N 400 -480 410 -480 {lab=#net10}
+N 550 -480 620 -480 {lab=#net10}
+N 880 -480 890 -480 {lab=#net11}
+N 1010 -480 1020 -480 {lab=#net7}
+N 1250 -480 1260 -480 {lab=#net7}
+N 1380 -480 1390 -480 {lab=Out}
+N 740 -480 750 -480 {lab=#net11}
+N 460 -400 460 -380 {lab=Vss}
+N 790 -480 790 -460 {lab=#net11}
+N 790 -400 790 -380 {lab=Vss}
+N 1060 -480 1060 -460 {lab=#net7}
+N 1060 -400 1060 -380 {lab=Vss}
 C {ipin.sym} -110 -340 0 0 {name=p1 lab=Vdd}
 C {ipin.sym} -110 -310 0 0 {name=p2 lab=Vss}
 C {opin.sym} -110 -210 0 0 {name=p4 lab=Out}
@@ -138,37 +145,10 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {T1/schmTrigg/schmTrigg.sym} 1120 -280 0 0 {name=x5}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 1070 -440 1 0 {name=M5
-L=3
-W=3
-nf=1 mult=1
-model=pfet_01v8_hvt
-spiceprefix=X
-}
-C {lab_wire.sym} 1100 -420 0 1 {name=p21 sig_type=std_logic lab=0
-}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 460 -440 1 0 {name=M2
-L=3
-W=3
-nf=1 mult=1
-model=pfet_01v8_hvt
-spiceprefix=X
-}
-C {lab_wire.sym} 490 -420 0 1 {name=p22 sig_type=std_logic lab=0
-}
 C {lab_wire.sym} 380 -380 2 0 {name=p5 sig_type=std_logic lab=nBias}
 C {lab_wire.sym} 720 -380 2 0 {name=p8 sig_type=std_logic lab=nBias}
 C {lab_wire.sym} 990 -380 2 0 {name=p10 sig_type=std_logic lab=nBias}
 C {lab_wire.sym} 1360 -380 2 0 {name=p11 sig_type=std_logic lab=nBias}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 790 -440 1 0 {name=M4
-L=3
-W=3
-nf=1 mult=1
-model=pfet_01v8_hvt
-spiceprefix=X
-}
-C {lab_wire.sym} 820 -420 0 1 {name=p15 sig_type=std_logic lab=0
-}
 C {lab_wire.sym} 320 -330 2 0 {name=p16 sig_type=std_logic lab=Vss}
 C {lab_wire.sym} 660 -330 2 0 {name=p17 sig_type=std_logic lab=Vss}
 C {lab_wire.sym} 930 -330 2 0 {name=p18 sig_type=std_logic lab=Vss}
@@ -182,3 +162,17 @@ C {lab_wire.sym} 380 -580 0 1 {name=p6 sig_type=std_logic lab=pBias}
 C {lab_wire.sym} 720 -580 0 1 {name=p7 sig_type=std_logic lab=pBias}
 C {lab_wire.sym} 990 -580 0 1 {name=p9 sig_type=std_logic lab=pBias}
 C {lab_wire.sym} 1360 -580 0 1 {name=p13 sig_type=std_logic lab=pBias}
+C {lab_wire.sym} 340 -520 0 1 {name=p26 sig_type=std_logic lab=Vdd}
+C {lab_wire.sym} 680 -520 0 1 {name=p27 sig_type=std_logic lab=Vdd}
+C {lab_wire.sym} 950 -520 0 1 {name=p28 sig_type=std_logic lab=Vdd}
+C {lab_wire.sym} 1320 -520 0 1 {name=p29 sig_type=std_logic lab=Vdd}
+C {lab_wire.sym} 1320 -440 2 0 {name=p30 sig_type=std_logic lab=Vss}
+C {lab_wire.sym} 950 -440 2 0 {name=p31 sig_type=std_logic lab=Vss}
+C {lab_wire.sym} 680 -440 2 0 {name=p32 sig_type=std_logic lab=Vss}
+C {lab_wire.sym} 340 -440 2 0 {name=p33 sig_type=std_logic lab=Vss}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 460 -430 0 0 {name=C1 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {lab_wire.sym} 460 -380 2 0 {name=p22 sig_type=std_logic lab=Vss}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 790 -430 0 0 {name=C2 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {lab_wire.sym} 790 -380 2 0 {name=p15 sig_type=std_logic lab=Vss}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1060 -430 0 0 {name=C3 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {lab_wire.sym} 1060 -380 2 0 {name=p21 sig_type=std_logic lab=Vss}

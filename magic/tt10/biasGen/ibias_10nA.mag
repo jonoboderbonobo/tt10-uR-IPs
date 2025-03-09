@@ -46,31 +46,31 @@ rect 440 -1556 486 -1524
 rect -92 -1621 268 -1575
 rect 440 -1602 640 -1556
 rect -92 -1634 108 -1621
-use sky130_fd_pr__nfet_01v8_X823H7  M1
+use s130_nfet_01v8_0w5_0l2_1  M1
 timestamp 1741366327
 transform 1 0 512 0 1 -1180
 box -78 -76 78 76
-use sky130_fd_pr__nfet_01v8_F2J7H7  M2
+use s130_nfet_01v8_0w5_0l2_2  M2
 timestamp 1741370557
 transform 1 0 512 0 1 -997
 box -78 -107 78 107
-use sky130_fd_pr__pfet_01v8_SA2XC2  M3
+use s130_pfet_01v8_0w5_0l35_1  M3
 timestamp 1741375889
 transform 1 0 237 0 1 -1192
 box -129 -114 129 148
-use sky130_fd_pr__pfet_01v8_NA2XZ9  M4
+use s130_pfet_01v8_0w5_0l35_2  M4
 timestamp 1741366327
 transform 1 0 237 0 1 -1002
 box -129 -112 129 112
-use sky130_fd_pr__pfet_01v8_Z48KH2  M5
+use s130_pfet_01v8_1w0_0l35  M5
 timestamp 1741378290
 transform 1 0 237 0 1 -1470
 box -129 -164 129 198
-use sky130_fd_pr__nfet_01v8_J6RR3Z  M6
+use s130_pfet_01v8_1w0_0l2  M6
 timestamp 1741374621
 transform 1 0 512 0 1 -1424
 box -78 -126 70 126
-use sky130_fd_pr__nfet_01v8_2TWFHQ  M7
+use s130_pfet_01v8_1w0_1l0  M7
 timestamp 1741376603
 transform 1 0 692 0 1 -1455
 box -150 -157 158 157
