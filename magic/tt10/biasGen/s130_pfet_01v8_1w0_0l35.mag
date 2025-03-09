@@ -1,13 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1741378290
-<< error_p >>
-rect -31 -111 31 -105
-rect -31 -145 -19 -111
-rect -31 -151 31 -145
+timestamp 1741542799
 << nwell >>
-rect -129 -164 129 198
+rect -129 -100 129 198
 << pmos >>
 rect -35 -64 35 136
 << pdiff >>
@@ -24,23 +20,15 @@ rect -81 -52 -47 124
 rect 47 -52 81 124
 << poly >>
 rect -35 136 35 162
-rect -35 -111 35 -64
-rect -35 -145 -19 -111
-rect 19 -145 35 -111
-rect -35 -161 35 -145
-<< polycont >>
-rect -19 -145 19 -111
+rect -35 -90 35 -64
 << locali >>
 rect -81 124 -47 140
 rect -81 -68 -47 -52
 rect 47 124 81 140
 rect 47 -68 81 -52
-rect -35 -145 -19 -111
-rect 19 -145 35 -111
 << viali >>
 rect -81 -52 -47 124
 rect 47 -52 81 124
-rect -19 -145 19 -111
 << metal1 >>
 rect -87 124 -41 136
 rect -87 -52 -81 124
@@ -50,10 +38,6 @@ rect 41 124 87 136
 rect 41 -52 47 124
 rect 81 -52 87 124
 rect 41 -64 87 -52
-rect -31 -111 31 -105
-rect -31 -145 -19 -111
-rect 19 -145 31 -111
-rect -31 -151 31 -145
 << properties >>
 string gencell sky130_fd_pr__pfet_01v8
 string library sky130

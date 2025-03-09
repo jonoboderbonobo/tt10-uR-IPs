@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1741465372
+timestamp 1741541561
 << nwell >>
 rect 598 1140 634 1246
 rect 1154 1140 1188 1246
@@ -113,20 +113,20 @@ rect 1667 311 1673 323
 rect 2165 311 2171 323
 rect 2223 311 2229 363
 rect 491 305 543 311
-use schmTrigg  schmTrigg_0 /foss/designs/tt10-uR-IPs/magic/tt10/schmTrig
-timestamp 1741464029
+use schmTrigg  stage_1 schmTrig
+timestamp 1741541561
 transform 1 0 793 0 1 2064
 box 934 -2063 1479 -803
-use schmTrigg  schmTrigg_1
-timestamp 1741464029
+use schmTrigg  stage_2 /foss/designs/tt10-uR-IPs/magic/tt10/osc/schmTrig/
+timestamp 1741541561
 transform 1 0 -872 0 1 2064
 box 934 -2063 1479 -803
-use schmTrigg  schmTrigg_2
-timestamp 1741464029
+use schmTrigg  stage_3 /foss/designs/tt10-uR-IPs/magic/tt10/osc/schmTrig/
+timestamp 1741541561
 transform 1 0 -317 0 1 2064
 box 934 -2063 1479 -803
-use schmTrigg  schmTrigg_3
-timestamp 1741464029
+use schmTrigg  stage_out /foss/designs/tt10-uR-IPs/magic/tt10/osc/schmTrig/
+timestamp 1741541561
 transform 1 0 238 0 1 2064
 box 934 -2063 1479 -803
 << end >>

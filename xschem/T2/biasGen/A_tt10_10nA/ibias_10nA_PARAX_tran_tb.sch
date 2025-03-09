@@ -54,8 +54,8 @@ node=vdd_jump}
 B 2 1430 -820 2060 -540 {flags=graph
 
 sim_type=tran
-y1=-9.4e-12
-y2=1.1e-08
+y1=-1.8e-12
+y2=1.2e-08
 divy=5
 subdivy=1
 
@@ -91,8 +91,9 @@ autoload=0
 
 x1=0
 
-color=4
-node=i(vi_d)
+color="4 7"
+node="i(vi_d)
+i(vi_d_parax)"
 
 
 
