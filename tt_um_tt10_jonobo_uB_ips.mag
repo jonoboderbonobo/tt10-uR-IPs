@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1741548473
+timestamp 1741551514
 << locali >>
 rect 27845 1407 27879 1722
 << viali >>
@@ -260,26 +260,26 @@ rect 30362 156 30410 200
 rect 30474 200 30480 220
 rect 30474 156 30542 200
 rect 30362 0 30542 156
+use s130_mim_sl_40fF  cap_osc_1 /foss/designs/tt10-uR-IPs/magic/tt10/osc/cap
+timestamp 1741551216
+transform 1 0 29992 0 1 2302
+box -474 -628 182 628
 use ibias_10nA  bias /foss/designs/tt10-uR-IPs/magic/tt10/biasGen
 timestamp 1741542799
 transform 1 0 26376 0 1 3242
 box 108 -1612 850 -889
-use s130_mim_dl_40fF  cap_osc_1 /foss/designs/tt10-uR-IPs/magic/tt10/osc/cap
-timestamp 1741537464
-transform -1 0 29612 0 -1 2002
-box -597 -828 59 329
-use s130_mim_dl_40fF  cap_osc_2
-timestamp 1741537464
-transform -1 0 27820 0 -1 2002
-box -597 -828 59 329
-use s130_mim_dl_40fF  cap_osc_3
-timestamp 1741537464
-transform -1 0 28716 0 -1 2002
-box -597 -828 59 329
 use osc  osc_0 /foss/designs/tt10-uR-IPs/magic/tt10/osc
 timestamp 1741541561
 transform 1 0 27735 0 1 1603
 box -20 1 2272 1261
+use s130_mim_sl_40fF  cap_osc_2 /foss/designs/tt10-uR-IPs/magic/tt10/osc/cap
+timestamp 1741551216
+transform 1 0 28188 0 1 2302
+box -474 -628 182 628
+use s130_mim_sl_40fF  cap_osc_3 /foss/designs/tt10-uR-IPs/magic/tt10/osc/cap
+timestamp 1741551216
+transform 1 0 29096 0 1 2312
+box -474 -628 182 628
 << labels >>
 flabel metal4 s 28766 44952 28826 45152 0 FreeSans 480 90 0 0 clk
 port 0 nsew signal input
