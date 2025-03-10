@@ -1,10 +1,7 @@
-# ⚠️⚠️ Site under construction ⚠️⚠️
-#  SuRF 🏄‍♀️ Piezoelectric Actuation Circuits
+#  Bias Current Generator + Ring-Oscillator
 This tapeout is part of the [Open Source Mobile Microrobotics Framework SuRF 🏄‍♀️](https://github.com/jonoboderbonobo/surf/) and aims to provide Silicon Proven-, Tested-, Open Source-, Reusable Circuit-Blocks for Microrobots with On-Board Actuation. <br> <br>
-If you are just here for the circuits you can skip to the [documenation](docs/info.md).
-<br> <br>
-If you are new to the field of **Microrobotics❤️** that's even better! For you I would recommend reading this current introduction file, before taking a deep dive into the [marvelous world of the microscale](https://github.com/jonoboderbonobo/surf/blob/main/barrier-free.md).
-<br>
+Details about the circuits can be found in the projects [documenation](docs/info.md).
+
 
 # What is a Mobile Microrobot?
 

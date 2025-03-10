@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1741560675
+timestamp 1741618103
 << nwell >>
 rect 24539 3976 24722 3978
 << locali >>
@@ -148,9 +148,8 @@ rect 24204 4242 24210 4244
 rect 25057 4241 25123 4244
 rect 25328 4241 25394 4244
 rect 26367 3767 26427 4076
-rect 26692 4017 26982 4067
-rect 26922 3767 26982 4017
-rect 27718 3767 27778 4091
+rect 26922 3767 26982 4076
+rect 27718 3767 27778 4076
 rect 26364 3762 26430 3767
 rect 26364 3706 26369 3762
 rect 26425 3706 26430 3762
@@ -269,18 +268,18 @@ transform 1 0 24418 0 1 5576
 box 5 -1612 850 -838
 use s130_mim_sl_40fF  cap_osc_1 /foss/designs/tt10-uR-IPs/magic/tt10/osc/cap
 timestamp 1741556153
-transform 1 0 28037 0 1 4636
+transform 1 0 26230 0 1 4636
 box -474 -628 182 628
 use s130_mim_sl_40fF  cap_osc_2
 timestamp 1741556153
-transform 1 0 26230 0 1 4636
+transform 1 0 27141 0 1 4646
 box -474 -628 182 628
 use s130_mim_sl_40fF  cap_osc_3
 timestamp 1741556153
-transform 1 0 27141 0 1 4646
+transform 1 0 28037 0 1 4636
 box -474 -628 182 628
 use osc  osc_0 /foss/designs/tt10-uR-IPs/magic/tt10/osc
-timestamp 1741560675
+timestamp 1741599597
 transform 1 0 25777 0 1 3937
 box -20 -88 2350 1261
 << labels >>
